@@ -1,0 +1,224 @@
+
+@import 'vars.sass'
+
+
+// gutter
+.header,
+.share-this,
+.rate-this,
+.index .items .item  
+  margin-bottom: $gutter
+
+.sidebar,
+#column_one,
+#column_large,
+.header .logo,
+.users .index .items .item:nth-child(odd),
+  margin-right: $gutter
+
+//
+// positions
+//
+
+.middle
+  position: absolute
+  top: 50%
+  left: 50%
+
+  .inner
+    position: relative
+    margin-top: -50%
+    margin-left: -50%
+
+.middle-top
+  position: absolute
+  top: 50%
+
+  .inner
+    position: relative
+    margin-top: -50%
+
+.middle-width
+  position: absolute
+  left: 50%
+
+  .inner
+    position: relative
+    margin-left: -50%
+    width: 960px
+    text-align: center
+
+.header
+  min-height: $logo + $gutter
+
+
+ul.menu li
+  display: inline
+
+.will-paginate
+  display: inline-block
+
+.header
+  position: relative
+
+  .logo
+    position: absolute
+    top: 0
+    left: 0
+
+  ul.menu
+    float: left
+    clear: left
+    margin-left: $logo + $gutter
+
+#search_main
+  float: left
+  margin-left: 100px + $gutter
+  clear: left
+
+#login_register
+  width: $cols2
+  position: absolute
+  right: 0
+
+
+
+//
+// margins
+//
+#layout_light_semantic,
+#header_main,
+#footer_main,
+#content_main,
+.will-paginate,
+.prev-next
+  margin-left: auto
+  margin-right: auto
+
+
+
+//
+// floats
+//
+#column_one,
+#column_two,
+#column_small,
+#column_large,
+.sidebar,
+.main,
+.item,
+.item > img,
+.features .item > a,
+.features .item .meta
+
+  float: left
+
+// clears
+.header,
+.will-paginate,
+#footer_main section,
+.disqus,
+.rate-this,
+.share-this,
+.recommended-reports,
+.big-button
+  clear: both
+
+.items .item:nth-child(odd)
+  clear: left
+
+
+
+//
+// widths & positions
+//
+#layout_light_semantic
+  width: $iphone4_2
+  position: relative
+
+#header_main,
+#footer_main,
+#content_main
+  width: $cols13
+
+.sidebar
+  width: $cols3
+.main
+  width: $cols10
+
+#column_small
+  width: $cols5
+#column_large
+  width: $cols8
+
+#column_one
+  width: $cols6
+#column_two
+  width: $cols7
+
+
+.items
+  .item
+    width: $cols5
+
+  
+    
+
+// footer
+#footer_main
+
+  section:nth-child(1)
+    min-height: $logo + $gutter
+
+  section
+    margin: auto
+
+    .menu-vert
+      float: left
+      margin-right: $gutter
+      width: $cols5
+    .shtick
+      float: left
+      margin-right: $gutter
+      width: $cols2
+      margin-top: $gutter
+    .copyright
+      position: relative
+      float: left
+      margin-right: $gutter
+      width: $cols6
+      margin-right: 0
+
+      span
+        margin-left: $gutter + 100px
+        float: left
+        clear: left
+
+      > img
+        position: absolute
+        left: 0
+        top: 0
+
+  section.cities
+    padding-bottom: $gutter * 3
+    padding-top: $gutter
+    text-align: center
+
+    span
+      padding: $medium
+
+//
+// misc
+//
+
+ul.menu li,
+ul.menu-vert li
+  list-style-type: none
+
+a
+  color: red
+html
+  font-family: 'Asul', sans-serif
+
+
+  

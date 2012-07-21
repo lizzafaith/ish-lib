@@ -1,0 +1,197 @@
+
+
+ru:
+  
+  admin:
+    users:
+  
+  cities:
+    all: All Cities
+    feature: Feature Cities
+    list: Cities
+    map: Cities & Map Points
+    one: City
+    title: Travel Destinations
+    full_list: Alphabetical List
+    travel_to: Travel to
+    
+  communities:
+    one: Community
+    list: Communities
+    none: No Communities
+    
+  countries:
+    list: Countries
+    one: Country
+    
+   
+  days:
+    edit: Edit Day
+    new: New Day
+    search: Days (yyyy-mm-dd)
+    list: Days
+    
+  dictitems:
+    title: Aphorisms
+    
+  e:
+    email: Email is invalid or have been taken or something.
+    
+    not_found: This item is not found, sorry.
+    not_found_2:
+      -  Try search?
+    
+    no_route_matches: We could not find what you were looking for (404). Try actual search?
+    username: Username is invalid.
+    
+    venues:
+      no_events: Could not find events in this venue
+      
+  events:
+    one: Event
+    title: Events
+    list: Events
+    new: Add Event 
+    today: Events Today
+    
+  form:
+    which_city: Which City? 
+    
+  fucked_error: Something is fucked up! Shoot us an email we'll look at it. 
+  
+  g:
+    a: 
+    about: О нас
+    admin: 
+    by: 
+    clear: Clear
+    create: Create
+    delete: Delete
+    error: Error
+    failure: Failure
+    for: for
+    home: 
+    homepage: Путеводитель по городам и тусовкам
+    in: in
+    ish: Своя Свора
+    jump_to: Jump To
+    list: List
+    location: Location
+    manager: Manager
+    mark_features: Mark Features
+    new: New
+    news: News
+    not_found: Not Found! 404
+    of: of
+    privacy: Privacy Policy
+    search: Найти
+    set: Set
+    set_layout: Сменить стиль
+    submit: Submit
+    success: Success
+    sure: Are you sure?
+    
+  galleries:
+    error_404: The gallery `%{name}` was not found
+    error_404_2:
+      - Perhaps you misspelled it?
+      - You should try search, 
+      - return to the homepage, or 
+      - select from the list of galleries.
+    list: Фото галереи
+    more: More Galleries
+    new: New Gallery
+    one: Фоты
+  
+  manager:
+    
+  maps:
+    list: Карты
+    one: Карта
+    
+    
+  more: More... 
+  
+  my:
+    reports:
+      list: My Reports
+      
+    videos:
+      list: My Videos
+      
+  news:
+    list: Новости
+      
+  pages:
+    list: Pages
+    one: Page
+    title: Pages
+    new: Create Page
+    new-help-1: Pages are always public.
+    new-help-2: Pages are top-level links on your profile, along with lists of reports, galleries, and videos, and maps.
+    
+  ratings:
+    thanks: Thanks for rating!
+    
+  reports:
+    edit: Edit Article
+    list: Статьи
+  
+    more_news: More Articles
+    my:
+      search: Search My Articles
+    new: New Article
+    none: No articles found, please try again.
+    one: Статья
+    recommended: Recommended Articles
+    searching_for: Searching Articles for `%{keywords}`
+    title: Travel and Entertainment Articles
+    
+  tags:
+    children: Children Tags
+    one: Тэг
+    title: Tags
+    list: Тэги
+    new: New Tag 
+    
+  users:
+    chose_page: Chose a page to load...
+    dashboard: Панель
+    done_registered: You have successfully registered yeeeeeeee!!1
+    first_registration: Your first time here yeah?
+    layout_set_to: Layout is set to %{layout}
+    list: Пользователи
+    login: Войти
+    login_1: Мы используем Фэйсбук для авторизации/
+    message: Message %{username}
+    please_set_city: Please Set Your Current City to Use the Dashboard
+    please_sign_in: Please login with facebook before continuing.
+    profile: Profile
+    profile_of: Profile of
+    
+    register: Регистрация
+    save_pad: Save
+    scratchpad: Scratchpad
+    select_username: Select Username
+    sign_out: Выйти
+    welcome_back: Привет опять!
+    
+    
+  venues:
+    edit: Edit Venue
+    in_this_city: In This City
+    list: Venues
+    meta: A %{venue_type} in %{city}
+    new: New Venue
+    not_found: Venue is not Found!
+    one: Venue
+    
+  venue_types:
+    one: Venue Type
+    
+  videos:
+    one: Video
+    list: Videos
+    edit: Editing Video %{title}
+    
+  

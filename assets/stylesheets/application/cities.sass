@@ -1,0 +1,109 @@
+
+
+@import 'vars'
+
+// application 
+
+
+#cities_header
+  background: $white
+  padding: $large
+  margin: $large 0
+
+  h1
+    text-align: center
+
+  .logo
+    display: none
+
+  ul.menu
+    display: none
+
+  .greeter,
+  .today
+    margin-left: 50%
+
+
+#cities_index
+  .all-cities
+    > *
+      @extend .span-6
+      @extend .column
+    *:nth-child(4n)
+      @extend .last
+
+
+
+#cities_show
+
+  
+
+  #venues_weekly
+    .items
+      @extend .span-14
+
+    .item
+      @extend .span-2
+      @extend .column
+      clear: none
+
+    .item:nth-child(7)
+      @extend .last
+
+
+  #city_reports
+    
+    @extend ._reports_list
+
+    .item
+      clear: both
+
+  #city_galleries
+    @extend ._galleries_list
+
+    .item
+      clear: both
+
+  #city_maps,
+  #city_communities,
+  #city_users,
+  #city_events,
+  #city_weekly,
+  #city_galleries,
+    @extend ._index
+    @extend .span-12
+    margin-left: 480px
+    margin-top: $large
+  #city_maps
+    margin-top: 0
+
+  #city_galleries
+    @extend ._galleries_list
+
+  #city_reports
+    @extend ._reports_list
+    @extend .features
+    @extend .span-12
+
+    position: absolute
+    left: 0
+
+    .item
+      clear: both
+
+  #city_maps h2,
+  #users_index h3,
+  #city_reports h1,
+  #city_reports h2,
+    display: none
+
+  #users_index
+    display: none    
+
+
+
+
+
+
+
+

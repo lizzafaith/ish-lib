@@ -1,0 +1,36 @@
+
+@import 'vars'
+
+// light_semantic
+
+.galleries
+  .index
+    @extend ._galleries_list
+
+.related
+  .galleries
+    @extend ._galleries_list
+
+#galleries_index,
+#galleries__index,
+#galleries_show,
+  position: relative
+
+  #wide_skyscraper
+    position: absolute
+    left: -180px
+    top: 20px
+
+#ad_leaderboard
+  text-align: center
+
+#galleries_index,
+#galleries__index
+  @extend ._galleries_index
+
+  #ad_bottom
+    text-align: center
+    margin-top: $medium
+
+#galleries_features
+  @extend ._galleries_list

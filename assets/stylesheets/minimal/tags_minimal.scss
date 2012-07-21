@@ -1,0 +1,59 @@
+
+body.minimal {
+  .header h1 {
+    margin: 0;
+    height: 100px;
+    line-height: 100px;
+  }
+  h3 {
+    margin-bottom: 0;
+    margin-left: 105px;
+  }
+  h2 {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .minimal-ad {
+    margin: 10px 0 0 100px;
+  }
+
+  .menu-main {
+    border-bottom: 8px solid gray;
+    width: 500px;
+  }
+
+  .item-meta {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    margin-left: 100px;
+  }
+  .content ul {
+    width: 500px;
+  }
+  .content ul li img,
+  #reportView img {
+    margin: 5px 5px 5px 0;
+  }
+
+  #reportView {
+    position: absolute;
+    left: 520px;
+    top: 0;
+    margin: 0 50px 200px 0;
+  }
+
+  .footer {
+    margin: 20px 0 200px 100px;
+    border-top: 8px solid gray;
+    padding-top: 20px;
+    width: 500px;
+    height: 200px;
+  }
+}

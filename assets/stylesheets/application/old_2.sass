@@ -1,0 +1,402 @@
+
+@import 'vars'
+
+.center
+  text-align: center
+.space
+  height: $gutter
+.height-10
+  height: 10px
+
+body
+  height: 100%
+  margin: 0
+  padding: 0
+  font-family: 'Trykker', serif
+  background: url('/assets/backgrounds/sky5.jpg') !important
+  font-size: 75% !important
+
+#header_main
+  background: url(https://s3.amazonaws.com/ish-assets/dragon_head_top.jpg) top center no-repeat
+
+  #current_city_name
+    background: white
+
+  .logo-2
+    margin: 5px 0 0 5px
+
+.container
+  padding: 0 10px 0 10px
+  background: $light_gray
+
+.header div:first-child
+  text-align: center
+
+h1
+  margin-bottom: .1em
+
+.header h1
+  text-align: center
+  padding: 10px 0 0 0
+
+  a
+    text-decoration: none
+
+.forms-global
+  margin-top: 10px
+
+  input[type="text"]
+    width: 240px
+
+  select
+    width: 120px
+
+#current_city_name
+  width: 110px
+  float: left
+  margin-top: .5em
+  margin-right: 0px
+  text-align: right
+  background: white
+  padding-right: 10px
+
+#login_register
+  margin-top: 10px
+  text-align: right
+
+  li
+    list-style-type: none
+
+textarea
+  &.descr
+    height: 200px
+
+  &.address, &.subhead
+    height: 100px
+
+.label-list
+  label, select
+    float: left
+    width: 150px
+    clear: none
+
+  > div
+    clear: both
+
+.footer
+  margin-top: 10px
+  background: url(https://s3.amazonaws.com/ish-assets/dragon_head_bottom.jpg) top center no-repeat #BDD2FF
+  padding-bottom: 100px
+
+  ul, li
+    list-style-type: none
+
+.white, #login_register li
+  background: white
+  margin: 5px 3px 0 3px
+  padding: 2px 10px 2px 2px
+
+.footer .white
+  float: left
+  clear: left
+
+.logo .white
+  float: right
+  clear: right
+
+#city_reports_455f, .control-height
+  height: 500px
+  overflow: auto
+
+#city_venues_465f
+  height: 300px
+  overflow: auto
+  margin-bottom: 10px
+
+.index-small,
+  img
+    float: left
+    margin: 0 10px 0 0
+
+  h3
+    margin-top: 0
+    margin-bottom: .2em
+
+h3.index-small
+  padding: 5px
+  background: #cecece
+  margin: 0
+  margin-bottom: .2em
+  border-top: 3px solid yellow
+  height: 27px
+  line-height: 27px
+
+.form input[type="submit"]
+  line-height: 40px
+  height: 40px
+
+h3.index-small + input
+  margin-left: 10px
+
+select
+  border: 1px solid red
+
+form .day
+  input[type="text"]
+    width: 100%
+
+  textarea
+    height: 50px
+
+.box-1
+  background: #D5FFA4
+  border: 1px solid #BAFF6B
+  padding: 5px
+
+  h5
+    background: #FFFE92
+    border: 1px solid #CFCFCF
+    padding: 5px
+    margin-bottom: 5px
+
+  li
+    list-style-type: none
+    padding: 5px
+    background: #ECFFD7
+    margin-bottom: 5px
+    border-top: 1px solid #ffffff
+    border-left: 1px solid #ffffff
+    border-bottom: 1px solid #BAE686
+    border-right: 1px solid #BAE686
+
+.tags
+  padding: 5px
+  margin-top: 10px
+
+  h5
+    float: left
+    margin-right: 5px
+
+.sub-tag
+  margin-left: 15px
+
+.subscribe_box
+  margin-top: 10px
+  border: 2px solid yellow
+  padding: 5px
+  background: #d0eef1
+
+.reports_show h1
+  border-top: 5px solid black
+
+.bg-light-gray h4
+  border-top: 2px solid yellow
+  background: #eeeeee
+
+h2
+  margin-bottom: 5px
+
+.full-width img
+  max-width: 950px
+
+#dictionaryitems_show
+  .en
+    border-top: 3px solid yellow
+    background: url(https://s3.amazonaws.com/ish-assets/flags/en.png) right top no-repeat #cecece
+
+  .ru
+    border-top: 3px solid yellow
+    background: url(https://s3.amazonaws.com/ish-assets/flags/ru.png) right top no-repeat #cecece
+
+  .pt
+    border-top: 3px solid yellow
+    background: url(https://s3.amazonaws.com/ish-assets/flags/pt.png) right top no-repeat #cecece
+
+#galleries
+  border: 1px solid black
+  margin-bottom: 5px
+
+  .title
+    padding: 3px
+    background: yellow
+    margin: 5px 0 5px 0
+
+.ad-hanging-left
+  position: absolute
+  margin-left: -170px
+
+.tags-feature .tag-item
+  border: 1px solid black
+  margin: 0 2px 5px 0
+
+  .title
+    padding: 3px
+    background: yellow
+
+  ul
+    margin-left: 20px
+
+.edit-scratchpad textarea
+  display: block
+
+.dashboard .descr
+  border: 1px solid red
+  padding: 5px
+
+.stock-canvas canvas
+  border: 1px solid black
+
+textarea.small
+  width: 200px
+  height: 100px
+
+.map-fancy
+
+  .foldin
+    background: $light_gray
+
+  .selected
+    border: 1px solid red !important
+    border-bottom: none !important
+    font-weight: bold
+
+
+.reports-list-item 
+  border: 1px solid #FFD8C3
+  background: #FFF4EE
+  padding: $small
+  margin-bottom: $medium
+
+.reports-list-item h3 
+  padding: 0
+  margin: 0
+
+li.index-item 
+  clear: both
+
+.index-items h3 
+  margin-bottom: .2em
+  margin-top: 0.5em
+
+.reports_show .descr 
+  font-size: 1.2em
+
+.round
+  -moz-border-radius: $round
+  border-radius: $round
+  border: 1px solid black
+  margin-bottom: $medium
+  padding: $medium
+
+  h2, h3, h4
+    text-align: center
+    margin-bottom: $medium
+  h5
+    margin-bottom: 0
+
+  ul
+
+    li
+      list-style-type: none
+      border-bottom: 1px solid black
+      margin-bottom: $small
+      padding-bottom: $small
+
+      a
+        text-decoration: none
+
+    li:last-child
+      border-bottom: none
+      margin-bottom: 0
+      padding-bottom: 0
+  input[type=text]
+    width: 100%
+
+
+.will-paginate
+  background: white
+  float: left
+  clear: both
+  padding: $large
+  border-left: 5px solid grey
+
+
+#set_layout
+  float: left
+  clear: left
+  
+  margin-top: 10px
+
+  form > *
+    float: left
+  
+  label
+    width: 90px
+    text-align: right
+    padding-right: 10px
+    background: white
+
+  select
+    width: 140px
+    margin-right: 5px
+
+.big-button a,
+a.big-button
+  border: $border
+  padding: $small
+  text-decoration: none
+  display: inline-block
+  margin-top: $medium
+
+.tinymce
+  height: 500px
+
+.my
+  ul.menu
+    margin: 0 !important
+    
+.subhead
+  font-style: oblique
+
+.container
+  position: relative
+
+
+
+
+
+
+#column_one
+  @extend .span-12
+  @extend .column
+
+#column_two
+  @extend .span-12
+  @extend .column
+  @extend .last
+
+
+
+#reports_index,
+#user_reports,
+#reports_search
+  @extend ._reports_index
+  @extend ._reports_list
+
+#user_galleries
+  @extend ._galleries_list
+  @extend ._galleries_index
+
+
+#sidebar_content
+  @extend .span-6
+  @extend .column
+  
+#main_content
+  @extend .span-18
+  @extend .column
+  @extend .last
+
+#videos_features
+  @extend ._galleries_list
+  @extend ._videos_small

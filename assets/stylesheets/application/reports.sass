@@ -1,0 +1,55 @@
+
+
+@import 'vars'
+
+// application
+
+
+#reports_homepage,
+#cities_show
+
+  #cities_map,
+  #videos_features,
+  #galleries_features,
+    @extend ._features
+
+  #galleries_features
+    @extend ._galleries_small
+
+  #reports_features
+    @extend ._reports_list
+    
+
+#reports_search
+  @extend ._reports_list_small
+
+#reports_show
+
+  #column_one,
+  #column_two,
+    float: left
+    @extend .span-12
+    @extend .column
+
+  #column_two
+    @extend .last
+
+
+  .tags
+    margin-bottom: $medium
+
+    .item
+      @extend .column
+      @extend .span-3
+    .item:nth-child(8n)
+      @extend .last
+    .item:nth-child(8n + 1)
+
+  .recommended
+    .items
+      .item
+        @extend .column
+        @extend .span-3
+      .item:nth-child(4n)
+        @extend .last
+      .item:nth-child(4n + 1)

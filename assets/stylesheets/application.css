@@ -1,0 +1,15 @@
+/*
+ * 
+ * should get reports and galleries from light_semantic. 
+ *
+ *= require ./vendor/blueprint/screen
+ *= require ./vendor/superfish
+ *= require ./vendor/uploadify
+ *
+ *
+ *
+ *= require_directory ./common
+ *= require_directory ./application
+ *
+ *
+*/

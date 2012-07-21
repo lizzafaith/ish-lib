@@ -1,0 +1,65 @@
+
+
+@import 'vars'
+
+
+
+#reports_show
+  .tags
+    .tag
+      float: left
+      margin: 0 $gutter $gutter 0
+      background: $light_em
+
+  .report-image,
+  .related
+    float: right
+    clear: right
+    margin: 0 0 $small $small
+
+  .related
+    background: $light_em
+
+  .subhead
+    font-style: oblique
+    margin-bottom: $gutter
+
+  .tags
+    .tag
+      width: $cols2
+    .tag:nth-child(7n)
+      margin-right: 0
+    .tag:nth-child(7n + 1)
+      clear: left
+  .text-body
+    width: $cols9
+  .disqus
+    width: $cols8
+
+.recommended
+  h3
+    text-align: center
+    display: none
+  .item
+    img
+      display: block
+
+.related
+  h3.title
+    text-align: center
+
+
+#reports_index,
+#user_reports
+  @extend ._reports_index
+  
+
+.recommended
+  width: $cols8
+  .items
+    .item
+      width: $cols2
+    .item:nth-child(4n)
+      margin-right: 0
+    .item:nth-child(4n + 1)
+      clear: left

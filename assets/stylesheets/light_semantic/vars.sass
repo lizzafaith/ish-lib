@@ -1,0 +1,73 @@
+
+
+//
+// light semantic vars
+//
+
+@import '../common/vars.sass'
+@import '../vendor/frameless/frameless.scss'
+
+$text_color: black
+$scroll: 1em
+
+
+
+.clickable
+  border: 1px solid #a1add3
+  margin: 0 .6em .6em 0
+  margin-right: $small_margin
+  padding: .6em
+  text-decoration: none
+
+a.clickable:hover
+  background: #cfd7f0
+
+
+.scrollable
+  overflow-x: auto
+  overflow-y: hidden
+  display: inline-block
+
+
+
+
+._galleries_index
+  @extend ._index
+
+  .thumb
+    float: left
+    margin:  0 $small $small 0
+  
+  .item
+    float: left
+    width: 47%
+    margin-right: 0
+    padding-right: $medium
+
+  .item:nth-child(even)
+
+  .item:nth-child(odd)
+    clear: left
+
+
+
+._reports_index
+  @extend ._index
+
+  .item
+    float: left
+    width: 49%
+    clear: none
+    margin-right: 0
+
+    > a > img
+      float: left
+      margin: 0 $small $small 0
+
+  .item:nth-child(odd)
+    clear: left
+
+
+
+
+

@@ -1,0 +1,66 @@
+
+
+@import '../common/vars'
+@import '../common/maps'
+
+$body: #f6f9f7
+$body_width: 948px
+$border: 1px dotted gray
+
+._header
+  border-bottom: $border
+  margin-bottom: $medium
+
+._menu
+  li
+    margin: 0 $small
+    display: inline
+    list-style-type: none
+
+    a
+      padding: $small
+      // background: #e9eeeb
+      border: 2px solid $body
+
+    a:hover
+      border: 2px solid yellow // #e1e86f
+
+  
+._galleries_list,
+._reports_list,
+._half
+  > h1,
+  > h2,
+  > h3,
+    text-align: center
+
+  .items
+
+  .item
+    float: left
+    width: 25%
+
+  .item:nth-child(4n + 1)
+    clear: left
+
+._large
+  clear: both
+
+  > h1,
+  > h2,
+  > h3,
+    text-align: center
+
+  .items
+
+  .item
+    float: left
+    width: 50%
+
+  .item:nth-child(odd)
+    clear: left
+
+._half
+  width: 50%
+  float: left
+  clear: none

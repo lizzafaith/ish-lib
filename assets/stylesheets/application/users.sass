@@ -1,0 +1,67 @@
+
+
+@import 'vars'
+
+
+
+#users_show
+
+  #header_city
+    display: none
+
+  #header_user
+    .logo
+      display: none
+
+  #user_about
+    display: none
+    margin: $large 0 $large
+
+  #user_maps
+    display: none
+
+  #user_small_map_canvas
+    display: none
+
+
+
+#user_reports,
+#user_galleries,
+#user_videos
+  clear: both
+
+
+
+#header_user
+  .logo,
+  h1,
+  ul.menu,
+  ul.menu li
+    float: left
+
+  ul.menu li
+    padding: $medium
+
+
+
+
+
+#users_index
+  .item
+    @extend .span-6
+    @extend .column
+
+  .item:nth-child(3n)
+    @extend .last
+
+#users_sign_in
+  > *
+    clear: none
+
+
+.third
+  @extend .column
+  @extend .span-8
+
+.third:nth-child(3n)
+  @extend .last

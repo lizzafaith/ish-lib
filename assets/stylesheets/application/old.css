@@ -1,0 +1,156 @@
+
+/* city stuff */
+.city-name {
+  background: white;
+}
+.city-name h1 {
+  text-align: center;
+}
+
+.feature-city {
+  height: 200px;
+  background: #eff5ff;
+  margin-bottom: 2em;
+}
+
+.calendar ul {
+  list-style-type: none;
+}
+
+
+/* menus */
+
+.no-bullet {
+  list-style-type: none;
+}
+
+
+.sf-menu,
+.menu-organizer {
+    font-family: 'Mate SC', serif;
+}
+.menu-main {
+    z-index: 100;
+    background: #BDD2FF;
+} 
+.menu-organizer {
+    background: #a1bcf6;
+    border-top: #6190f5 2px solid;
+    margin-bottom: 1em;
+    padding: .2em 0 .4em 0;
+}
+.menu-organizer > ul > li {
+    float: left;
+    list-style-type: none;
+}
+.menu-organizer li a {
+    padding: 0.75em 1em;
+}
+
+li.menu-spacer {
+  padding-left: 3em;
+}
+#organizer_label {
+  margin: 0 10px 0 10px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+.menu-secondary-content {
+  background: #a1bcf6;
+  border: 2px solid black;
+  left: 10px;
+  top: 50px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  width: 80px;
+  z-index: 100;
+}
+.menu-secondary-content ul li {
+  display: block;
+  list-style-type: none;
+}
+
+/* partial */
+
+.padded {
+    padding: 10px;
+}
+.margin-top {
+    margin-top: 10px;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.padded-container {
+    padding: 5px;
+    margin-top: 5px;
+}
+.bg-gray {
+    background: #E0E0E0;
+}
+.bg-light-gray {
+    background: #dadada;
+}
+.bg-yellow {
+    background: yellow;
+}
+
+/* submenus */
+#gf34 ul.submenu {
+    margin-top: 10px;
+}
+#gf34 ul.submenu li,
+#cfi22 ul.submenu li {
+    display: block;
+    float: left;
+}
+#gf34 .submenu a {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    line-height: 10px; height: 10px;
+    text-decoration: none;
+    background: #BCBCBC;
+}
+#gf34 .submenu a:hover {
+    background: yellow;
+}
+#cfi22 div b,
+#cfi22 .submenu {
+    float: left;
+}
+#cfi22 .submenu {
+    margin-bottom: 3px;
+}
+#cfi22 .submenu a {
+    border: 1px solid black;
+    border-bottom: 0;
+    padding: 5px;
+    margin: 5px;
+}
+#cfi22 .submenu a.selected {
+    border-bottom: 0;
+    background: #E0E0E0;
+}
+
+#gf34 h1 {
+    font-size: 3em;
+}
+#cfi22 h4 {
+    padding: 5px;
+    margin: 0 0 5px 0;
+}
+#cfi22 li {
+    list-style-type: none;
+}
+
+/* todos */
+
+
+
+.todos-index {
+  width: 500px;
+}
+.todos-index ul li {
+  clear: both;
+}

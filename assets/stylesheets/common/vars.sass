@@ -1,0 +1,80 @@
+
+
+@import 'utils'
+
+$logo: 100px
+$collapsed: 20px
+$mini: $collapsed
+
+$iphone: 320px
+$iphone_1: 320px
+$iphone_2: 480px
+
+$iphone4: 640px
+$iphone4_1: 640px
+$iphone4_2: 960px
+
+$ipad: 1536px
+$ipad_1: 1536px
+$ipad_2: 2048px
+
+$border: 1px solid black
+
+$gutter: 24px
+$small: .5em
+$medium: $small * 2
+$large: $medium * 2
+$tiny: $small / 2
+$round: 10px
+
+$bg_cyan: #d7e1ff // #e6e6e6
+$bg_body: white // #e7edff
+// $bg: #F7F7FA // $light_gray
+$light_em: #fffaab
+$bg_dark: #5d71ab
+$black: black
+$white: white
+$bg_black: $black
+
+$small_margin: .5em
+$large_margin: 2em
+$margin: 1em
+
+$logo_height: 100px
+$text_width: 820px
+$h1_height: 100px
+
+$sidebar: 300px
+
+._index
+  margin-bottom: 50px
+
+  > h1,
+  h2,
+  > h3
+    margin-bottom: $medium
+
+  .item
+    margin-bottom: $medium
+
+
+
+
+._galleries_list
+  @extend ._index
+
+  .thumb
+    float: left
+    margin: 0 10px 0 0
+
+
+._reports_list
+  @extend ._index
+
+  .item
+
+    a img
+      float: left
+      margin: 0 $small $small 0
+
+

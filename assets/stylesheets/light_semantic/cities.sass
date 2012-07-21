@@ -1,0 +1,85 @@
+
+
+@import 'vars'
+
+// light semantic
+
+#cities_header
+  @extend .header
+
+  position: relative
+  margin-bottom: $gutter
+  border-bottom: $border
+  min-height: $logo + $gutter
+
+  ul.menu li
+    display: inline
+    padding: 0 $small
+
+  .logo
+    position: absolute
+
+  h1,
+  ul.menu,
+    float: left
+    clear: left
+    margin-left: $logo + $gutter
+  
+  .greeter,
+  .today,
+    float: right
+    width: $cols4
+    clear: right
+
+.scroller-fixed #cities_header
+  
+  ul.menu li
+    display: block
+
+  h1,
+  ul.menu,
+    float: none
+    margin-left: 0
+
+  .logo
+    position: relative
+
+#cities_index
+  .all-cities h2
+    float: left
+    width: 23%
+    margin-right: 2%
+    margin-bottom: $large
+
+#cities_show
+
+  #city_communities,
+  #city_events,
+  #city_weekly,
+    margin-bottom: $large
+
+  #user_about,
+  #user_small_map_canvas,
+    display: none
+    
+
+  #city_reports,
+  #city_galleries,
+  #city_videos,
+  #city_maps,
+  #city_communities,
+  #city_events,
+  #city_weekly,
+  #city_users,
+    margin-left: $cols4
+    padding-left: $gutter
+    @extend ._index
+
+  #city_reports
+    @extend ._reports_index
+
+  #city_maps,
+  #city_reports,
+    h2
+      display: none
+  

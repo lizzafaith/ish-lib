@@ -1,0 +1,95 @@
+
+
+@import 'vars'
+
+
+.share-this,
+.rate-this,
+.disqus,
+.tags .index .items .item,
+  margin-top: $large
+
+
+h2.section,
+.big-button
+  clear: both
+  text-align: center
+
+.reports
+  .features,
+  .index
+    .item
+      padding-top: $gutter
+
+      a img
+        float: left
+        margin: 0 $small $small 0
+
+      .meta
+        display: none
+
+    .item
+      clear: left
+
+
+
+
+#feports_index,
+#reports_features,
+  .item
+    clear: left
+
+    img
+      float: left
+      margin: 0 10px 0 0
+  
+#galleries_features,
+#galleries__index
+  padding-top: $large
+
+  h2.section
+    margin-top: 0
+
+#users_header
+  @extend .header
+
+  h1
+    text-align: left !important
+
+#galleries_show
+  .meta,
+  .prev-next,
+  #photo_main,
+  h1
+    text-align: center
+
+.meta
+  font-style: oblique
+
+#communities_index_small
+  ul li img
+    float: left
+    margin-right: $small
+
+  ul li h3
+    float: left
+
+  ul li
+    clear: both
+
+ul.menu li
+  list-style-type: none
+
+#galleries_show,
+#users_index,
+#users_show,
+#galleries_index,
+  position: relative
+
+#users_index
+  #ad_wide_skyscraper
+    @extend #ad_skyscraper_hanging
+
+.related
+  .galleries
+    @extend ._galleries_list

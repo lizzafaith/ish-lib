@@ -1,0 +1,103 @@
+
+@import 'vars'
+
+
+#header_main,
+#content_main,
+#footer_main
+  width: $cols14
+#column_one,
+#column_two
+  width: $cols7
+#sidebar,
+#header_user
+  width: $cols4
+#main
+  width: $cols10
+
+
+.index
+  .items
+    .item
+      width: $cols7
+    .item:nth-child(odd)
+      clear: left
+    .item:nth-child(even)
+      margin-right: 0
+
+.users
+  > .index > .items
+    .item
+      width: $cols2
+    .item:nth-child(7n)
+      margin-right: 0
+    .item:nth-child(7n + 1)
+      clear: left
+.show
+  .reports,
+  .galleries
+    > .index > .items
+      .item
+        width: $cols5
+      .item:nth-child(odd)
+        clear: left
+      .item:nth-child(even)
+        margin-right: 0
+
+  #user_large_map_canvas
+    width: $cols10
+
+.galleries
+  .items
+    .item
+      width: $cols7
+    .item:nth-child(odd)
+      clear: left
+    .item:nth-child(even)
+      margin-right: 0
+.tags
+  .index
+    width: $cols12
+    margin-left: $cols2
+    padding-left: $gutter
+
+    .items
+      .item
+        width: $cols4
+      .item:nth-child(3n)
+        margin-right: 0
+      .item:nth-child(3n + 1)
+        clear: left
+
+.scroller-fixed
+  width: $cols4
+#login_register
+  margin-left: $cols13
+
+.users > .show > .videos > .index >
+  .items
+    width: $cols9
+    margin-left: $cols1
+    padding-left: $gutter
+
+    .item
+      width: $cols3
+    .item:nth-child(3n)
+      margin-right: 0
+    .item:nth-child(3n + 1)
+      clear: left
+
+.venues
+  .weekly
+    width: $cols14
+
+#reports__index
+  .items
+    width: $cols10 + $scroll
+
+    .item
+      width: $cols5
+    .item:nth-child(even)
+      margin-right: 0
+    .item:nth-child(odd)
+      clear: left

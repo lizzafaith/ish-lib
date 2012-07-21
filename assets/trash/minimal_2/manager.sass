@@ -1,0 +1,26 @@
+
+
+@import 'vars.sass'
+
+.manager
+
+  .fixed
+    position: fixed
+    width: 100%
+    top: 0
+    background: $bg_body
+    z-index: 20
+
+  .not-fixed
+    margin-top: $logo_height + $large
+    
+
+ul#menu_new,
+ul.menu-list
+  margin-top: $small_margin
+  margin-bottom: $small_margin * 3
+  li
+    display: inline
+    list-style-type: none
+    a
+      @extend .clickable

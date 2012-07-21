@@ -1,0 +1,137 @@
+
+@import 'vars'
+
+
+
+
+.items .item
+  margin-right: $gutter
+  float: left
+
+
+a
+  text-decoration: none
+  color: red
+
+#header_main,
+#content_main,
+#footer_main
+  margin: auto
+  clear: left
+
+
+#scroller_main
+#scroller_city
+#scroller_last
+.scroller-fixed
+  position: fixed
+  top: 0
+.scroller-city-fixed
+  position: fixed
+  top: $logo
+.scroller-main-fixed
+  position: fixed
+  top: 0
+
+
+
+.header,
+#header_main,
+#users_header,
+  border-bottom: $border
+  margin-bottom: $gutter
+  padding-bottom: $gutter
+
+  .logo,
+  .menu,
+  #search_main,
+    float: left
+    margin-right: $gutter
+
+  h1
+
+    a
+      background: $bg_body
+      white-space: pre
+
+#header_main
+  position: relative
+
+  h1
+    display: none
+
+  #login_register
+    position: fixed
+    top: 0
+    background: $light_em
+
+  .logo-fixed
+    position: fixed
+    top: 0
+
+  #set_layout
+    position: absolute
+    top: $gutter
+    left: $logo * 2 + $gutter
+
+#footer_main
+  border-top: $border
+  margin-top: $gutter
+  padding-top: $gutter
+
+  section
+    clear: both
+
+    ul,
+    .shtick
+      float: left
+      margin-right: $gutter
+
+    .copyright
+      float: right
+
+      .logo
+        margin-right: $gutter
+        float: left
+        border: $border
+
+      span:nth-child(n + 2)
+        float: right
+        clear: right
+
+  section:nth-child(2)
+    padding-top: $gutter
+    text-align: center
+    padding-bottom: $gutter * 4
+
+    > span
+      padding: $gutter
+
+.features
+  h2.section
+    text-align: center
+    margin-top: $gutter
+
+    a
+      color: $text_color
+
+h2.big-button
+  a
+    border: $border
+    padding: $small
+    display: block
+
+
+
+
+      
+#column_one,
+#column_two,
+#sidebar,
+#main
+  float: left
+  min-height: 1px
+#column_one,
+#sidebar
+  margin-right: $gutter
+

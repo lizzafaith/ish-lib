@@ -1,0 +1,65 @@
+
+@import 'vars.sass'
+
+
+
+
+#menu_new
+  li
+    list-sytle-type: none
+    display: inline
+
+    a 
+      @extend .clickable
+
+.sidebar-scroller
+  // margin-top: $medium
+  width: $sidebar_width
+  position: absolute
+  margin-bottom: 500px
+  background: $bg_body
+  z-index: 5
+
+  li
+    list-style-type: none
+
+    a 
+      @extend .clickable
+      display: block
+      width: $sidebar_width - $large - $large
+
+.scroller
+  @extend .scrollable
+  height: 3.8em
+
+.page-numbers
+  z-index: 50
+  display: inline-block
+  zoom: 1
+  *display: inline
+  white-space: nowrap
+
+  span
+    border: $border
+    margin: 0 .6em .6em 0
+    padding: .6em
+    line-height: 2.8em
+
+  .selected
+    background: $bg_cyan
+
+.scratchpad-content,
+.users-edit textarea
+  @extend textarea.edit-scratchpad
+
+
+textarea.edit-scratchpad
+  width: 100%
+  height: 300px
+
+.header h1 a
+  border: none
+
+.addr textarea
+  width: 300px
+  height: 100px

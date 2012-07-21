@@ -1,0 +1,85 @@
+
+
+@import 'vars'
+
+// ultra
+
+#reports_index
+  @extend ._large
+
+#reports_show
+  #header_one
+    .logo
+      display: none
+
+  #header_one
+    @extend ._header
+
+  h1#title
+    padding: $medium
+
+  .tags
+    .city
+      display: none
+
+  #column_one,
+  #column_two,
+    float: none
+    width: 100%
+
+  .tags
+    .item
+      float: left
+      // width: 25%
+      padding: $small
+      // background: $light_em
+      margin-right: $medium
+      border: $border
+
+    .item:nth-child(4n + 1)
+      // clear: left
+
+  .subhead
+    width: 400px
+    margin: $medium $medium $medium 0
+    float: left
+    font-style: oblique
+
+  #ad_rectangle
+    display: none
+
+
+  .text-body
+    clear: left
+
+  .text-body,
+  .subhead,
+  h1#title,
+  .tags,
+  .report-image,
+  .rate-this,
+  .disqua,
+  .share-this,
+  .recommended,
+    padding-right: $medium
+    padding-left: $medium
+
+  .recommended
+    img
+      display: block
+
+    .item
+      width: 25%
+      float: left
+
+    .items
+      clear: left
+
+  .related,
+  .report-image,
+    margin: 0 0 $medium $medium
+    float: right
+    clear: right
+
+  .related
+    width: 400px

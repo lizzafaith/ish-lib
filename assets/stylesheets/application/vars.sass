@@ -1,0 +1,71 @@
+
+
+@import '../common/vars'
+@import 'grid'
+
+$light_gray: #F4FAFA
+
+
+._videos_small
+  @extend ._index
+
+  .item
+    @extend .span-6
+    @extend .column
+  .item:nth-child(even)
+    @extend .last
+  .item:nth-child(odd)
+    clear: left
+
+._galleries_small
+  @extend ._galleries_list
+
+  .item 
+    clear: both
+
+._galleries_index
+  .item
+    @extend .span-12
+    @extend .column
+  .item:nth-child(even)
+    @extend .last
+  .item:nth-child(odd)
+    clear: left
+
+._reports_list
+
+  .item h3
+
+    margin-bottom: $small
+
+._reports_index
+  .item
+    @extend .span-12
+    @extend .column
+
+  .item:nth-child(even)
+    @extend .last
+
+  .item:nth-child(odd)
+    clear: left
+
+._reports_list_small
+  .items
+    @extend .span-18
+  .item
+    @extend .span-9
+    @extend .column
+  .item:nth-child(even)
+    @extend .last
+
+._features
+  margin-bottom: 50px
+
+  h2.section
+    margin-bottom: 0
+
+    a
+      text-decoration: none
+
+  h3
+    margin-bottom: $small

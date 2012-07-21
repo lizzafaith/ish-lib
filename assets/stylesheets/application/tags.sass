@@ -1,0 +1,23 @@
+
+@import 'vars'
+
+#tags_index
+  @extend ._index
+
+  .item
+    @extend .span-12
+    @extend .column
+  .item:nth-child(2n)
+    @extend .last
+
+  .item
+    background: white
+
+#tags_show,
+
+  #header_one
+    h1
+      text-align: center
+
+  .reports
+    @extend ._reports_list_small

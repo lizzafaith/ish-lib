@@ -1,0 +1,101 @@
+
+@import 'vars.sass'
+
+a._standard
+  text-decoration: none
+  color: red
+  background: #ffcccc
+  padding: $small
+  border: 2px solid #ffcccc
+
+a._standard:hover
+  background: black
+  color: cyan
+  border: 2px solid yellow
+
+._main
+  z-index: 5
+  background: $bg_body
+  position: fixed
+  width: 100%
+
+ul._menu
+  margin-top: $medium
+  margin-left: $small
+
+  li
+    margin-bottom: $small * 3
+
+    a
+      @extend a._standard
+
+
+
+
+
+#header_main
+  @extend ._main
+  border-bottom: $border
+  height: $logo + $collapsed
+  top: -$logo
+
+  .logo,
+  ul.menu
+    float: left
+
+  ul.menu
+    @extend ul._menu
+
+#dashboard #sidebar
+  ul.menu
+    @extend ul._menu
+
+#content_main
+  margin-top: $collapsed
+  margin-bottom: $collapsed
+
+#footer_main
+  @extend ._main
+  border-top: $border
+  bottom: -$logo
+  height: $logo + $collapsed
+  width: 100%
+
+  ul.menu
+    margin-top: $mini
+
+#header_expand
+  display: block
+  text-align: center
+  width: 100%
+  position: absolute
+  top: $logo
+
+#footer_expand
+  text-align: center
+  display: block
+  position: absolute
+  width: 100%
+  top: 0
+  
+// not bad
+$console: $sidebar
+$c_height: 300px
+#console
+  border: $border
+  width: $console
+  position: absolute
+  bottom: $collapsed
+  right: 0
+  overflow: hidden
+  
+  background: white
+  z-index: 2
+
+  height: $c_height
+  bottom: $collapsed + $logo
+
+  #log_main
+    position: absolute
+    bottom: 0
+    

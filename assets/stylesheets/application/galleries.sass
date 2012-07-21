@@ -1,0 +1,55 @@
+
+
+@import 'vars'
+
+#galleries__index,
+#users_index,
+  h3
+    margin-bottom: $small
+
+
+#galleries_features
+  .big-button
+    display: none
+
+#galleries_show
+
+  #cities_header
+    display: none
+
+  #users_header
+    display: none
+
+  #wide_skyscraper
+    position: absolute
+    left: -180px
+    top: 20px
+
+#galleries_index
+  @extend ._galleries_list
+  @extend ._galleries_index
+
+  .ad-wide-skyscraper
+    position: absolute
+    left: -180px
+
+  #ad_bottom
+    @extend .span-24
+    float: left
+    clear: both 
+    margin-top: $medium
+    text-align: center
+
+    
+    
+#galleries_error
+  @extend ._galleries_list
+  @extend ._galleries_index
+
+  #galleries__search
+    margin-bottom: 100px
+    @extend .span-12
+    float: left
+
+  #galleries__index
+    clear: both

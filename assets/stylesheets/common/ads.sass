@@ -1,0 +1,50 @@
+  
+@import 'vars.sass'
+
+.ad
+  display: inline-block
+  background: gray
+
+.ad_large_rectangle,
+.ad-large-rectangle
+  width: 336px
+  height: 280px
+  @extend .ad
+
+.ad_skyscraper,
+.ad-skyscraper
+  width: 160px
+  height: 600px
+  @extend .ad
+
+.ad-leaderboard,
+.ad_leaderboard
+  width: 728px
+  height: 90px
+  @extend .ad
+
+.ad-wide-skyscraper
+  @extend .ad
+  width: 160px
+  height: 600px
+
+.ad-medium-rectangle
+  @extend .ad
+  width: 300px
+  height: 250px
+
+.links-vertical-large
+  @extend .ad
+  width: 200px
+  height: 90px
+
+#header_main
+  .links-large
+    float: left
+    margin-left: $gutter
+    @extend .ad
+
+
+#ad_skyscraper_hanging
+  position: absolute
+  left: -180px

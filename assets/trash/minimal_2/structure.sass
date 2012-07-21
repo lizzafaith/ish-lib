@@ -1,0 +1,216 @@
+
+@import 'vars.sass'
+
+a
+  color: #d32c2c
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
+
+.sidebar
+  padding-left: $large
+  width: $sidebar_width
+  float: left
+  margin-top: $h1_height
+  position: relative
+
+  // border: $border
+
+  form
+    .age input[type='text'] 
+      width: 2em
+
+  .line
+    margin-bottom: 1em
+
+.main
+  float: right
+  // margin-left: $sidebar_width + $large
+  // position: relative
+  // background: yellow
+
+  h1
+    height: $h1_height
+    line-height: $h1_height
+    overflow: auto
+
+.index-list
+  .item
+    float: left
+    width: 200px
+    margin-bottom: 50px
+
+.reports-show
+  .subhead
+    font-style: oblique
+
+h1 + p
+  margin-top: 0
+
+
+.form-big
+  form
+    input
+      font-size: 1.2em
+
+    .new-photo
+      background: #d8dfff
+      padding: 2em 3em 3em 1em
+      margin: 0 0 1em 0
+      border: $border
+      width: 500px
+
+  .actions
+    margin-top: $margin
+
+
+.header
+  border-bottom: $border
+  margin-top: $medium
+  
+  
+  .logo
+    float: left
+
+  #main_search
+    float: left
+    height: $logo_height
+    line-height: $logo_height
+    margin-right: $large
+    padding-right: $large + $medium
+    display: none
+
+  .search_1,
+  .search_close
+    position: absolute
+    top: $logo_height / 2 - 10px
+    right: $medium * 2
+    line-height: 0
+
+  .my-dashboard
+    float: right
+    background: $bg_cyan
+    height: $logo_height
+    line-height: $logo_height
+    margin-right: $medium
+    padding-left: $medium
+    padding-right: $medium
+    position: relative
+    min-width: 40px
+
+  li
+    list-style-type: none
+    float: left
+    height: $logo_height
+    line-height: $logo_height
+
+    a
+      padding: .5em
+      
+      
+      
+      @extend .clickable
+
+  .login_with_fb
+    padding-top: .5em
+
+    a
+      border: 0
+
+  > ul
+    float: left
+    height: 100px
+    margin-right: $large_margin
+
+    .e
+      margin-right: $small_margin * 3
+
+    h1
+      margin-left: $margin
+      margin-right: $small_margin
+
+      a
+        margin-left: -$small_margin
+
+      
+
+.descr-text
+  background: $bg_cyan
+  width: $text_width
+  padding: 1em
+
+.meta-item
+  background: $bg_cyan
+
+.subhead
+  margin-bottom: 20px
+  margin-right: 20px
+
+.footer
+  margin-top: 50px
+  padding: 10px 0 100px 0
+  border-top: $border
+  clear: both
+
+  .width-third
+    width: 30%
+    padding-left: 3%
+    float: left
+
+    ul
+      list-style-type: none
+
+      a
+        @extend .clickable
+        display: block
+        width: 120px
+
+.text-column
+  width: $text_width
+
+.swooshit
+  position: relative
+
+.swooshable-list-1
+  // background: yellow
+.swooshable-list-2
+  position: absolute
+  top: 0
+  // background: cyan
+
+.swooshable-list-1,
+.swooshable-list-2
+  display: block
+  overflow: visible
+  background: $bg_body
+
+span.contact
+  position: relative
+  top: .3em
+
+.boxx
+  padding: $medium
+  background: $bg_cyan
+
+  h2
+    margin-bottom: $medium
+
+
+.big-button
+  @extend .clickable
+  text-align: center
+  margin: $medium auto
+  
+  a
+    text-decoration: none
+
+.children-float-left > *
+  float: left
+  margin-right: $medium
+
+.children-float-left :last-child
+  margin-right: 0
+
+.qq + p
+  margin-top: 0
