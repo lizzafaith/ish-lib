@@ -13,5 +13,11 @@ class NoCity
   has_many :no_reports
   has_many :no_venues
   
+  has_one :no_photo
+  
+  def photo
+    self.no_photo
+  end
+  
   
 end

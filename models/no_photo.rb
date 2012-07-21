@@ -8,4 +8,6 @@ class NoPhoto
   belongs_to :no_venue
   belongs_to :no_user
   
+  belongs_to :no_city
+  
 end
