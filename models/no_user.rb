@@ -51,7 +51,7 @@ class NoUser
   end
   
   def username
-    self.name || self.email
+    self.email || self.name
   end
   
   

@@ -29,13 +29,7 @@ class NoModel2
   end
   
   def self.public
-    self.where( :is_feature => 1, :is_trash => 0 )
-  end
-  
-  # @deprecated
-  def self.features
-    warn 'deprecated use .feature'
-    self.feature
+    self.where( :is_public => 1, :is_trash => 0 )
   end
   
   def self.feature

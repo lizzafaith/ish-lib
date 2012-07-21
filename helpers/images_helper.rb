@@ -2,6 +2,14 @@
 
 module ImagesHelper
   
+  def button_fb_login
+    link_to image_tag('http://s3.amazonaws.com/ish-assets/loginWithFacebook.png'), user_omniauth_authorize_path(:facebook), :class => :fb
+  end
+  
+  def image_ish
+    image_tag 'logo.png'
+  end
+  
   def image_top
     image_tag('top.gif')
   end
@@ -30,16 +38,6 @@ module ImagesHelper
     s3_image_tag 'cac.png'
   end
   
-  # @deprecated use image_edit
-  def edit_image
-    image_edit
-  end
-  
-  # @deprecated use image_delete
-  def delete_image
-    image_delete
-  end
-  
   def image_delete
     image_tag 'delete.png'
   end
@@ -63,13 +61,19 @@ module ImagesHelper
   
   # @TODO:
   def video_thumb video
+    warn 'todo wtf?'
     image_tag 'no_image.png'
   end
   
+  #
+  # missing stuff
+  #
+  
   def image_or_missing photo, size = :thumb
+    
     if defined? photo.photo
       if defined? photo.photo.url
-        image_tag photo.photo.url size
+        image_tag photo.photo.url(size)
       end
     else
       missing
@@ -91,18 +95,9 @@ module ImagesHelper
       else
         return false
       end
-    else
-      return true
     end
-  end
-  
-  def button_fb_login
-    link_to image_tag('http://s3.amazonaws.com/ish-assets/loginWithFacebook.png'), user_omniauth_authorize_path(:facebook), :class => :fb
-  end
-  
-  def image_ish
-    # @todo: move to s3
-    image_tag 'logo.png'
+    
+    return true
   end
   
 end
