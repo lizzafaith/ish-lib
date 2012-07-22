@@ -11,21 +11,20 @@ class NoReport < NoModel2
     self.public.features.desc(:created_at).limit(4)
   end
   
-  has_many :no_photos
   belongs_to :no_user
-  belongs_to :no_city
   
-  field :tags, :type => Array
-  
-  
-  def photo
-    self.no_photos[0]
-  end
   
   field :subhead, :type => String
   
-  def user
-    self.no_user
+  # create if does not exist
+  def self.old_or_new args
+    old = NoReport.where( :seo => args[:seo] ).first
+    if old.blank?
+      old = NoReport.new :name => args[:name], :seo => args[:seo]
+      old.save
+    end
+    
+    return old
   end
   
   def galleries
@@ -40,8 +39,19 @@ class NoReport < NoModel2
     NoReport.all.public.feature.limit(4)
   end
   
+  has_many :no_photos
+  def photo
+    self.no_photos[0]
+  end
+  
+  belongs_to :no_city
   def city
     self.no_city
+  end
+  
+  belongs_to :no_user
+  def user
+    self.no_user
   end
   
 end
