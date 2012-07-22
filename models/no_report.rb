@@ -44,4 +44,8 @@ class NoReport < NoModel2
     self.no_city
   end
   
+  def self.features n = 6
+    self.public.feature.desc(:created_at).limit(6)
+  end
+  
 end

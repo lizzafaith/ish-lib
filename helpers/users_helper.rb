@@ -100,4 +100,16 @@ module UsersHelper
     "/users/add/#{u[:id].to_s}"
   end
   
+  #
+  # no_users
+  #
+  
+  def no_user_path u
+    "/people/show/#{u.username}"
+  end
+  
+  def no_user_sign_out_button u
+    button_to t('users.sign_out'), sign_out_path, :method => :delete
+  end
+  
 end

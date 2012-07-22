@@ -123,6 +123,9 @@ en:
     videos:
       list: My Videos
       
+    users:
+      profile: My Profile
+      
   pages:
     list: Pages
     one: Page

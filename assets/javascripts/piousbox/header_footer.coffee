@@ -18,9 +18,11 @@ $(document).ready ->
       localStorage.setItem('header_expanded', val)
 
   HF.collapse_footer = ->
-    $("#footer_main").css('bottom', -U.logo )
+    $(".L").addClass('footer-collapsed')
+
   HF.expand_footer = ->
-    $("#footer_main").css('bottom', 0 )
+    $(".L").removeClass('footer-collapsed')
+
   HF.toggle_footer = ->
     if HF.footer_expanded() == true
       HF.collapse_footer()
@@ -30,11 +32,11 @@ $(document).ready ->
       HF.footer_expanded(true)
 
   HF.collapse_header = ->
-    $("#header_main").css('top', -U.logo)
-    $("#content_main").css('margin-top', U.collapsed )
+    $(".L").addClass('header-collapsed')
+    
   HF.expand_header = ->
-    $("#header_main").css('top', 0)
-    $("#content_main").css('margin-top', U.logo + U.collapsed )
+    $(".L").removeClass('header-collapsed')
+    
   HF.toggle_header = ->
     if HF.header_expanded() == true
       HF.collapse_header()
