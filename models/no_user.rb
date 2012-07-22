@@ -2,8 +2,14 @@
 
 class NoUser
   
-  
   include Mongoid::Document
+  
+  devise :registerable,
+    # :recoverable, :trackable, :validatable, :rememberable,
+  # :token_authenticatable, 
+  # :database_authenticatable,
+  # :encryptable, :confirmable, :lockable, :timeoutable, 
+  :omniauthable, :omniauth_providers => [ :facebook ]
   
   field :email, :type => String
   field :name, :type => String
@@ -23,12 +29,12 @@ class NoUser
   has_many :no_videos
   has_many :no_reports
   has_many :no_venues
+  has_many :days
   
   has_one :profile_photo, :class_name => 'NoPhoto'
   
   field :created_at, :type => DateTime, :default => DateTime.new
   field :updated_at, :type => DateTime, :default => DateTime.new
-  
   
   def self.create_if_nil user
     
@@ -39,19 +45,14 @@ class NoUser
       no_user = NoUser.new
       no_user.email = user[:email]
       no_user.group_id = 3
-      if no_user.save
-        return true
-      else
-        return false
-      end
-    else
-      return true
+      no_user.save
     end
-    
+      
+    return no_user
   end
   
   def username
-    self.email || self.name
+    self.email.split('@')[0]
   end
   
   

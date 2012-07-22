@@ -1,5 +1,5 @@
 
-@import 'vars.sass'
+@import 'vars'
 
 a._standard
   text-decoration: none
@@ -32,12 +32,36 @@ ul._menu
 
 
 
+body  
+  #header_main
+    top: 0
+  #content_main
+    margin-top: $logo + $collapsed
+body
+  > .header-collapsed
+    #header_main
+      top: -$logo
+    #content_main
+      margin-top: $collapsed
+
+body
+  #footer_main
+    bottom: 0
+  #content_main
+    margin-bottom: $collapsed + $logo
+body
+  > .footer-collapsed
+    #footer_main
+      bottom: -$logo
+    #content_main
+      margin-bottom: $collapsed
+
+
 
 #header_main
   @extend ._main
   border-bottom: $border
   height: $logo + $collapsed
-  top: -$logo
 
   .logo,
   ul.menu
@@ -51,8 +75,8 @@ ul._menu
     @extend ul._menu
 
 #content_main
+  position: relative
   margin-top: $collapsed
-  margin-bottom: $collapsed
 
 #footer_main
   @extend ._main

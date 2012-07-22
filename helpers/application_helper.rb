@@ -1,6 +1,11 @@
 
 module ApplicationHelper
   
+  def home_path
+    "/"
+  end
+  
+  
   
   # serve ads?
   def adserv

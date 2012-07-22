@@ -6,6 +6,18 @@ module ImagesHelper
     link_to image_tag('http://s3.amazonaws.com/ish-assets/loginWithFacebook.png'), user_omniauth_authorize_path(:facebook), :class => :fb
   end
   
+  def image_expand_down
+    image_tag 'drag.png'
+  end
+  
+  def image_expand_up
+    image_tag 'drag.png'
+  end
+  
+  def image_ppf
+    image_tag 'ppf.gif'
+  end
+  
   def image_ish
     image_tag 'logo.png'
   end
