@@ -42,4 +42,8 @@ class NoVenue < NoModel2
     []
   end
   
+  def venue_type
+    'venue-type-mock'
+  end
+  
 end
