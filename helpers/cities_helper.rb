@@ -1,21 +1,22 @@
 module CitiesHelper
   
-#  def city_path city
-#    if city.is_a?(String)
-#      return '/cities/travel-to/' + city
-#    end
-#    
-#    if city.class == NoCity
-#      "/cities/travel-to/#{city.seo}"
-#    end
-#    
-#    unless city.name_seo.blank?
-#      '/cities/travel-to/' + city.name_seo
-#      
-#    end
-#    
-#    return '/cities/' + city.id.to_s
-#  end
+  
+  def city_path city
+    if city.is_a?(String)
+      return '/cities/travel-to/' + city
+    end
+    
+    if city.class == NoCity
+      "/cities/travel-to/#{city.seo}"
+    end
+    
+    unless city.name_seo.blank?
+      '/cities/travel-to/' + city.name_seo
+      
+    end
+    
+    return '/cities/' + city.id.to_s
+  end
   
   def global_city_path var
     if var.is_a?(String)

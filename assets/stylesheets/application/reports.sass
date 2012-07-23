@@ -25,6 +25,15 @@
 
 #reports_show
 
+  h1#title
+    margin: $large auto
+    text-align: center
+
+  .subhead,
+  .report-image,
+  .related,
+    width: 400px
+
   #column_one,
   #column_two,
     float: left
@@ -39,11 +48,9 @@
     margin-bottom: $medium
 
     .item
+      border: $border
+      padding: $small
       @extend .column
-      @extend .span-3
-    .item:nth-child(8n)
-      @extend .last
-    .item:nth-child(8n + 1)
 
   .recommended
     .items
@@ -53,3 +60,19 @@
       .item:nth-child(4n)
         @extend .last
       .item:nth-child(4n + 1)
+
+  .related
+    @extend ._reports_list
+
+    .related-reports
+      margin-top: $medium
+
+      > h3
+        text-align: center
+      h4
+        margin-bottom: $small
+
+      .item
+        float: right 
+        clear: right
+        width: 400px
