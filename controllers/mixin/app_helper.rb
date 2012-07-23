@@ -6,13 +6,7 @@
 module Mixin::AppHelper
   
   
-    
   
-  
-  include do
-    helper 'images'
-    helper 'users'
-  end
   
   def set_action_name
     begin

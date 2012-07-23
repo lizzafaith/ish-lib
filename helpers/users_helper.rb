@@ -112,4 +112,8 @@ module UsersHelper
     button_to t('users.sign_out'), sign_out_path, :method => :delete
   end
   
+  def user_omniauth_authorize_path *args
+    no_user_omniauth_authorize_path args
+  end
+  
 end
