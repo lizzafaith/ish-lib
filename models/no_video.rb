@@ -1,4 +1,5 @@
 
+require 'to_slug'
 
 class NoVideo < NoModel2
   
@@ -37,11 +38,6 @@ class NoVideo < NoModel2
   # trash
   field :city_id, :type => Integer
   
-  before_create :set_seo
-  
-  def set_seo
-    self.seo = self.name.to_slug
-  end
   
   
 end

@@ -95,4 +95,8 @@ module UsersHelper
     no_user_omniauth_authorize_path args
   end
   
+  def current_user
+    current_no_user
+  end
+  
 end
