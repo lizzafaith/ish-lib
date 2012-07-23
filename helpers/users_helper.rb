@@ -13,29 +13,8 @@ module UsersHelper
   
   def facebook_login
     
-    path_2 = user_omniauth_authorize_path(:facebook)
+    path_2 = no_user_omniauth_authorize_path(:facebook)
     return link_to image_fb, path_2, :class => :fb
-    
-    case @parsed_locale
-    when 'pt'
-      app_id = FB_ID_PT
-      url = PT_URL
-      
-    when 'ru'
-      app_id = FB_ID_RU
-      url = RU_URL
-      
-    when 'en'
-      app_id = FB_ID_EN
-      url = EN_URL
-      
-    end
-      
-    redirect_url = "http://#{url}/users/auth/callbacks/facebook"
-    state = Digest::SHA1.hexdigest rand(1000).to_s
-    path = "https://www.facebook.com/dialog/oauth?client_id=#{app_id}&redirect_uri=#{redirect_url}&scope=email&state=#{state}"
-    
-    
     
   end
   
