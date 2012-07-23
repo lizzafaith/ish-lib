@@ -8,7 +8,6 @@ class NoPhoto
   belongs_to :no_report
   belongs_to :no_venue
   belongs_to :no_user
-  
   belongs_to :no_city
   
   field :url, :type => String

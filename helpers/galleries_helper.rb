@@ -28,4 +28,8 @@ module GalleriesHelper
     "/galleries/search"
   end
   
+  def venue_gallery_path
+    '#'
+  end
+  
 end
