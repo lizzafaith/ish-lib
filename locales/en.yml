@@ -152,9 +152,11 @@ en:
     
   tags:
     children: Children Tags
+    features: Hot Topics
     one: Tag
     title: Tags
     list: Tags
+    name: Topic `%{name}`
     new: New Tag 
     
   users:

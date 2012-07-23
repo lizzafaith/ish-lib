@@ -1,7 +1,16 @@
+
+
 module ReportsHelper
   
   def my_reports_path
     return '/my/reports'
+  end
+
+  def view_report_path r
+    if r.class.name == String
+      # this must be a stub
+      '#'
+    end
   end
   
   def report_path report
