@@ -10,13 +10,17 @@ module UsersHelper
     "/users/set-username"    
   end
   
-  
   def facebook_login
-    
-    path_2 = no_user_omniauth_authorize_path(:facebook)
-    return link_to image_fb, path_2, :class => :fb
-    
+    path_2 = user_omniauth_authorize_path(:facebook)
+    return link_to image_fb, path_2, :class => :fb    
   end
+  
+  #  def facebook_login
+  #    
+  #    path_2 = no_user_omniauth_authorize_path(:facebook)
+  #    return link_to image_fb, path_2, :class => :fb
+  #    
+  #  end
   
   def recent_activity_path user
     '/users/show/' + user[:username] + '/recent_activity'
@@ -90,13 +94,13 @@ module UsersHelper
   def no_user_sign_out_button u
     button_to t('users.sign_out'), sign_out_path, :method => :delete
   end
-  
-  def user_omniauth_authorize_path *args
-    no_user_omniauth_authorize_path args
-  end
-  
-  def current_user
-    current_no_user
-  end
+  #  
+  #  def user_omniauth_authorize_path *args
+  #    no_user_omniauth_authorize_path args
+  #  end
+  #  
+  #  def current_user
+  #    current_no_user
+  #  end
   
 end

@@ -12,5 +12,9 @@ class Day
   field :a4, :type => String
   field :a5, :type => String
   
+  field :work, :type => String
+  field :dream, :type => String
+  
   belongs_to :no_user
+  
 end

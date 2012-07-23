@@ -19,9 +19,7 @@ module Mixin::Indestructible
     end
   end
   
-  # @deprecated
   def publicize
-    warn 'deprecated wtf is this?'
     model = controller_name.classify.constantize
     @item = model.find(params[:id])
     @item[:is_public] = 1
@@ -36,9 +34,7 @@ module Mixin::Indestructible
     end
   end
   
-  # @deprecated
   def unpublicize
-    warn 'deprecated wtf is this?'
     model = controller_name.classify.constantize
     @item = model.find(params[:id])
     @item[:is_public] = 0
