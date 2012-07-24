@@ -1,9 +1,9 @@
 
 
-class NoUser
+class ForUser
   
   include Mongoid::Document
-
+  
   field :email, :type => String
   field :name, :type => String
   
@@ -29,6 +29,9 @@ class NoUser
   field :created_at, :type => DateTime, :default => DateTime.new
   field :updated_at, :type => DateTime, :default => DateTime.new
   
+    
+  
+  
   def self.create_if_nil user
     
     # first check that nouser does not exist
@@ -43,7 +46,7 @@ class NoUser
       
     return no_user
   end
-  
+    
   def username
     self.email.split('@')[0]
   end
@@ -51,6 +54,5 @@ class NoUser
   def self.from_user user
     self.create_if_nil user
   end
-  
+    
 end
-
