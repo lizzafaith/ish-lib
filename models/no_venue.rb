@@ -8,10 +8,11 @@ class NoVenue < NoModel2
 
   has_and_belongs_to_many :no_reports
   
-  field :venue_type_name, :type => String
+  field :venue_type_names, :type => Array
+  field :address, :type => String
   
   def venue_type
-    venue_type_name
+    venue_type_names[0]
   end
   
   
@@ -40,10 +41,6 @@ class NoVenue < NoModel2
   
   def galleries
     []
-  end
-  
-  def venue_type
-    'venue-type-mock'
   end
   
 end

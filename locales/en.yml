@@ -193,6 +193,7 @@ en:
     
   venue_types:
     one: Venue Type
+    list: Venue Types
     
   videos:
     one: Video
