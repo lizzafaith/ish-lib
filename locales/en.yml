@@ -152,6 +152,9 @@ en:
     searching_for: Searching Articles for `%{keywords}`
     title: Travel and Entertainment Articles
     
+  seo:
+    tag_list: Tag List
+    
   tags:
     children: Children Tags
     features: Hot Topics
