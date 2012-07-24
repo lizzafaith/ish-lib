@@ -5,7 +5,7 @@
  *= require ./vendor/blueprint/screen
  *= require ./vendor/superfish
  *= require ./vendor/uploadify
- *
+ *= require ./vendor/lightbox
  *
  *
  *= require_directory ./common

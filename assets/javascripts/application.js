@@ -23,6 +23,8 @@
 //= require ./vendor/uploadify/jquery.uploadify.v2.1.4.min
 //= require ./vendor/uploadify/swfobject
 //
+//= require ./vendor/lightbox
+//
 //
 //
 //= require ./global
