@@ -167,7 +167,7 @@ en:
     layout_set_to: Layout is set to %{layout}
     list: People
     login: Login
-    login_1: Please sign in with Facebook. We do not store your password and do not publish anything on your timeline.
+    login_1: Please sign in with Facebook. We do not store your password and do not publish anything on your timeline. The reason we use Facebook instead of our own authentication system is because we do not want to store your passwords at all, and we think it is a good idea to not make you remember many passwords, but just one (the facebook one).
     message: Message %{username}
     please_set_city: Please Set Your Current City to Use the Dashboard
     please_sign_in: Please login with facebook before continuing.

@@ -17,19 +17,26 @@ class ForUser
   
   field :group_id, :type => Integer
   
-  # has_many :days
-  has_many :pages
-  has_many :no_videos
-  has_many :no_reports
-  has_many :no_venues
-  has_many :days
+  include do
+    # has_many :days
+    has_many :pages
+    has_many :no_videos
+    has_many :no_reports
+    has_many :no_venues
+    has_many :days
   
-  has_one :profile_photo, :class_name => 'NoPhoto'
+    has_one :profile_photo, :class_name => 'NoPhoto'
+  
+    
+  
+  end
   
   field :created_at, :type => DateTime, :default => DateTime.new
   field :updated_at, :type => DateTime, :default => DateTime.new
   
-    
+    def photo
+      ;
+    end
   
   
   def self.create_if_nil user
