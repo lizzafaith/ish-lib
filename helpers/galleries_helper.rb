@@ -1,7 +1,13 @@
 module GalleriesHelper
   
-  def gallery_image_path gallery, photo_id = ''
-    "/galleries/show/#{gallery[:name_seo]}/#{photo_id.to_s}"
+  def gallery_image_path gallery, photo_id = '', opts = {}
+    if opts[:set_style].blank?
+      optsz = ''
+    else
+      optsz = "?set_style=#{opts[:set_style]}"
+    end
+    
+    "/galleries/show/#{gallery[:name_seo]}/#{photo_id.to_s}#{optsz}"
   end
   
   def publicize_gallery_path gallery
@@ -30,6 +36,10 @@ module GalleriesHelper
   
   def venue_gallery_path
     '#'
+  end
+  
+  def wide_image_path
+    "/photos/wide/"
   end
   
 end
