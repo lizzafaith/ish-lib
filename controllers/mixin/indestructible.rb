@@ -10,7 +10,7 @@ module Mixin::Indestructible
     @item[:is_trash] = 1
     respond_to do |format|
       if @item.save!
-        format.html { redirect_to(args[:redirect_to] || request.referer || dashboard_path) }
+        format.html { redirect_to(args[:redirect_to] || dashboard_path) }
         format.json { head :ok }
       else
         format.html { render :action => "edit" }
