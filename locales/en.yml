@@ -14,7 +14,7 @@ en:
     one: City
     title: Travel Destinations
     full_list: Alphabetical List
-    travel_to: Travel to
+    travel_to: Travel to %{city_name}
     
   communities:
     one: Community
@@ -86,6 +86,8 @@ en:
     news: News
     not_found: Not Found! 404
     of: of
+    old_title: This content is no longer maintained
+    old_1: You have probably attempted accessing a page that was created and destroyed in 2009. It is no longer available. Please use the main navigation to access portions of the site interesting to you.
     privacy: Privacy Policy
     pub_unpub: Published / Not
     search: Search
@@ -205,5 +207,6 @@ en:
     one: Video
     list: Videos
     edit: Editing Video %{title}
-    
+    none_1: Videos functionality has been removed from Infinite Shelter.
+    none_2: Please refer to piousbox.com/videos for a similar video stream.
   
