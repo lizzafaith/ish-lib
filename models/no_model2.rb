@@ -36,10 +36,6 @@ class NoModel2
     self.where( :is_feature => 1 )
   end
   
-  
-  
   field :tags, :type => Array
-  
-  
   
 end
