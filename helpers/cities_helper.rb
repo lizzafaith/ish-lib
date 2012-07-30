@@ -6,7 +6,7 @@ module CitiesHelper
       return '/cities/travel-to/' + city
     end
     
-    if city.class == NoCity
+    if city.class.name == 'NoCity'
       "/cities/travel-to/#{city.seo}"
     end
     
