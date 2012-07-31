@@ -4,7 +4,7 @@
 en:
   
   admin:
-    users:
+    users: Admin Users List
   
   cities:
     all: All Cities
@@ -72,7 +72,7 @@ en:
     failure: Failure
     for: for
     home: Home
-    homepage: Homepage
+    homepage: Travel & Party Guide & Organizer - Infinite Shelter
     in: in
     ish: Party & Travel Guide & Organizer
     jump_to: Jump To
