@@ -42,4 +42,8 @@ module GalleriesHelper
     "/photos/wide/"
   end
   
+  def galleries_path_2
+    "/galleries/index_2"
+  end
+  
 end

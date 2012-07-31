@@ -1,0 +1,23 @@
+
+@import 'vars'
+
+
+#galleries_index_2
+
+  .galleries
+
+    .item
+      padding: $medium
+      float: left
+      width: 400px
+
+      img
+        display: block
+
+    .item:nth-child(odd)
+      background: $gray_light
+    .item:nth-child(even)
+      background: $gray_dark
+      
+    .item:nth-child(3n + 1)
+      clear: left

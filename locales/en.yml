@@ -11,6 +11,7 @@ en:
     feature: Feature Cities
     list: Cities
     map: Cities & Map Points
+    new: New City
     one: City
     title: Travel Destinations
     full_list: Alphabetical List
@@ -37,7 +38,8 @@ en:
     
   e:
     email: Email is invalid or have been taken or something.
-    
+    explain_1: prohibited this report from being saved
+      
     not_found: This item is not found, sorry.
     not_found_2:
       -  Try search?
@@ -66,8 +68,10 @@ en:
     admin: Admin
     by: by
     clear: Clear
+    coordinates: Coordinates
     create: Create
     delete: Delete
+    do_you_have_address: Do you have the address?
     error: Error
     failure: Failure
     for: for
@@ -84,11 +88,13 @@ en:
     mark_features: Mark Features
     new: New
     news: News
+    no_items: No Items
     not_found: Not Found! 404
     of: of
     old_title: This content is no longer maintained
     old_1: You have probably attempted accessing a page that was created and destroyed in 2009. It is no longer available. Please use the main navigation to access portions of the site interesting to you.
     privacy: Privacy Policy
+    privacy_policy: Privacy Policy
     pub_unpub: Published / Not
     search: Search
     set: Set
@@ -122,6 +128,8 @@ en:
   more: More... 
   
   my:
+    galleries:
+      list: My Galleries
     reports:
       list: My Reports
       
@@ -140,7 +148,9 @@ en:
     new-help-2: Pages are top-level links on your profile, along with lists of reports, galleries, and videos, and maps.
     
   ratings:
+    rate_this: Rate This
     thanks: Thanks for rating!
+    
     
   reports:
     edit: Edit Article
@@ -207,6 +217,7 @@ en:
     one: Video
     list: Videos
     edit: Editing Video %{title}
+    new: New Video
     none_1: Videos functionality has been removed from Infinite Shelter.
     none_2: Please refer to piousbox.com/videos for a similar video stream.
   

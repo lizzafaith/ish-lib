@@ -10,7 +10,7 @@ module Mixin::AppHelper
   
   def set_action_name
     begin
-      @action_name = params[:controller] + '_' + params[:action]
+      @action_name = params[:controller].gsub('/', '_') + '_' + params[:action]
     rescue
     end
   end
