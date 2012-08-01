@@ -32,24 +32,33 @@ ul._menu
 
 
 
+
+
 body  
   #header_main
     top: 0
+
+    #menu_main
+      li
+        float: left
+
   #content_main
     margin-top: $logo + $collapsed
-body
+
+  
+
   > .header-collapsed
     #header_main
       top: -$logo
     #content_main
       margin-top: $collapsed
 
-body
+
   #footer_main
     bottom: 0
   #content_main
     margin-bottom: $collapsed + $logo
-body
+
   > .footer-collapsed
     #footer_main
       bottom: -$logo

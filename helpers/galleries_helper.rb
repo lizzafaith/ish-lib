@@ -46,4 +46,8 @@ module GalleriesHelper
     "/galleries/index_2"
   end
   
+  def add_photos_to_path gallery
+    "/photos/driver_for/#{gallery[:id]}"
+  end
+  
 end

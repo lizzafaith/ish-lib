@@ -85,6 +85,7 @@ en:
     list: List
     location: Location
     manager: Manager
+    map: Map
     mark_features: Mark Features
     new: New
     news: News
@@ -104,6 +105,7 @@ en:
     sure: Are you sure?
     
   galleries:
+    add_photos: Add Photos
     error_404: The gallery `%{name}` was not found
     error_404_2:
       - Perhaps you misspelled it?
@@ -113,6 +115,10 @@ en:
     list: Galleries
     more: More Galleries
     new: New Gallery
+    no_photos_title: This gallery has no photos
+    no_photos_explanation:
+      - Are you the owner of this gallery?
+      - Go to Dashboard -> My Galleries, then find this gallery in the list, and click to add images to it ;-)
     one: Gallery
     standard_view: Standard View
     wide_view: Wide View

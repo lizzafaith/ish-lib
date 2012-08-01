@@ -34,10 +34,10 @@ $(document).ready ->
     else
       HF.collapse_footer()
 
-    $("#footer_expand").click ->
+    $("#footer_expand a").click ->
       HF.toggle_footer()
 
-    $("#header_expand").click ->
+    $("#header_expand a").click ->
       HF.toggle_header()
       
     #  
