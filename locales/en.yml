@@ -5,6 +5,7 @@ en:
   
   admin:
     users: Admin Users List
+    hello: Hello Admin
   
   cities:
     all: All Cities
@@ -96,6 +97,7 @@ en:
     old_1: You have probably attempted accessing a page that was created and destroyed in 2009. It is no longer available. Please use the main navigation to access portions of the site interesting to you.
     privacy: Privacy Policy
     pub_unpub: Published / Not
+    save: Save
     search: Search
     set: Set
     set_layout: Select Layout
@@ -151,6 +153,10 @@ en:
     new: Create Page
     new-help-1: Pages are always public.
     new-help-2: Pages are top-level links on your profile, along with lists of reports, galleries, and videos, and maps.
+    
+  photos:
+    list: Photos
+    one: Photo
     
   ratings:
     rate_this: Rate This

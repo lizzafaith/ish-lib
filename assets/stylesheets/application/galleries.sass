@@ -36,6 +36,14 @@
   h2.title
     text-align: center
 
+  #header_two
+    display: none
+
+  .thumbs,
+  .view-original,
+  .wide-view,
+    display: none
+
 
 #galleries_index,
 #tags_show .galleries-list,
@@ -68,11 +76,7 @@
     clear: both
 
 
-#my_galleries_index
-  .galleries
-    .item
-      margin-bottom: $medium
-      background: $dark_gray
-      padding: $medium
-      float: left
-      clear: both
+#my_galleries_index .galleries,
+#admin_photos_index .photos,
+  @extend ._admin_list
+    
