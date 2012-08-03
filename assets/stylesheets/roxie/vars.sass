@@ -22,14 +22,26 @@ $border_white: 1px solid white
     h3,
       float: left
 
-    > a
+    > a,
+    form,
       float: right
+
 
   .title,
   .title > *,
     height: 40px
     line-height: 40px
 
+._reports_list
+  .item,
+  .ad-rect
+    margin-top: $large
+
+  h2
+    margin: 0
+
+  .thumb
+    @extend ._float_left
 
 ._list
   clear: both
@@ -44,6 +56,15 @@ $border_white: 1px solid white
   .item:nth-child(4n)
     @extend .last
 
+
+._list_two
+  @extend ._list
+
+  .item
+    @extend .span-12
+
+  .item:nth-child(2n)
+    @extend .last
 
 ._list_half_four
   @extend ._list
