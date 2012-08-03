@@ -167,9 +167,9 @@ en:
   reports:
     edit: Edit Article
     list: Stories
-    more_news: More Articles
+    more_news: More Stories
     my:
-      search: Search My Articles
+      search: Search My Stories
     new: New Article
     none: No articles found, please try again.
     one: Article
