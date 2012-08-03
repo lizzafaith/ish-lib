@@ -2,8 +2,13 @@
 
 @import 'vars.sass'
 
+
+a
+  text-decoration: none
+
 #column_one
   @extend .span-12
+  clear: both
 
 #column_two
   @extend .span-12
@@ -11,10 +16,21 @@
 
 #sidebar_content
   @extend .span-4
+  clear: both
 
 #main_content
   @extend .span-18
   @extend .last
 
+#features_content
+  margin-top: $medium
+
 body
   background: url('/assets/backgrounds/gray-1.jpg')
+
+#footer_content
+  clear: both
+
+  .ad-rectangle
+    @extend .span-12
+    @extend .last

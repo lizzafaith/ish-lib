@@ -12,9 +12,11 @@
     margin: 0 auto
     text-align: center
     font-size: 1em
+    position: absolute
+    left: 50%
 
     a
-      text-decoration: none
+      @extend ._undecorated
       color: black
       font-weight: bold
 
@@ -34,7 +36,7 @@
       margin-right: $medium
 
       a
-        text-decoration: none
+        @extend ._undecorated
         font-size: 1.2em
         padding: $medium        
         // background: white
@@ -60,6 +62,10 @@
   @extend ._dark_bg
   clear: both
 
+  section
+    margin-bottom: $large
+    clear: both
+
   .footer-menu
     @extend .span-8
     @extend ._menu
@@ -67,9 +73,9 @@
     li
       margin: $medium
 
-      a
-        background: url('/assets/backgrounds/gray-1.jpg')
-        padding: $small
+  a
+    background: url('/assets/backgrounds/gray-1.jpg')
+    padding: $small
       
 
   .shtick
@@ -83,6 +89,8 @@
       @extend ._float_left
 
   .cities
+    @extend .span-24
+
     margin: 0 auto
     text-align: center
 
