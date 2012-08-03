@@ -13,6 +13,7 @@
     @extend ._menu_flat
 
   .ad-rect
+    clear: left
     @extend .span-9
   .reports-feature
     @extend .span-15
@@ -24,7 +25,13 @@
     h2
       margin: $large 0 0 0 
 
+    .ad-rect
+      margin: $large*2 0
 
+    .items
+      .item:nth-child(1)
+        h2
+          margin-top: 0
 
   .reports-feature
     .thumb img
@@ -36,19 +43,23 @@
   
 
 #reports_show
-
+  h1.title
+    margin: $medium 0 $small 0
+    
   #cities_header,
   #users__header,
     display: none
 
   .inline-ad
     @extend ._float_left
+    clear: left
+    margin-top: $medium
 
   .ad-bottom
     text-align: center
-    margin: auto
+    padding-top: $medium
+    clear: left
     
-  
 
   #header_three h1
     margin-top: $medium
@@ -60,13 +71,23 @@
 
   .report-image,
   .tags,
-  .related
+  .related,
+  .galleries,
+  .videos,
     @extend ._float_right
     clear: right
-    margin: $medium 0
-    
+    margin-botton: $medium
 
+    .title
+      margin-top: $medium
+      width: 330px
 
+    .galleries
+      h3
+        margin-bottom: $small
+
+  .report-image
+    margin-top: 3em
 
   .subhead
     width: 500px

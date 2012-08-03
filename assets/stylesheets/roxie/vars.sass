@@ -4,26 +4,13 @@
 
 $border_white: 1px solid white
 
-._undecorated
-  text-decoration: none
-
-  a
-    text-decoration: none
-
 ._dark_bg
   background: url('/assets/backgrounds/bg_texture_dark.jpg')
-
-._menu_simple
-  a
-    @extend ._undecorated
-
-
 
 ._feature_massive
   padding-top: $large * 2
 
 ._feature_title
-  @extend ._menu_simple
 
   .title
     margin-bottom: $medium
@@ -31,16 +18,15 @@ $border_white: 1px solid white
     background: white
     border-left: 5px solid gray
 
-    h1
+    h1,
+    h3,
       float: left
 
     > a
       float: right
 
   .title,
-  h1,
-  > a,
-    
+  .title > *,
     height: 40px
     line-height: 40px
 

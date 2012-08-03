@@ -3,28 +3,27 @@
 
 #galleries__features
   @extend ._feature_title
-  
+
   .item,
   .main-feature,
     @extend ._dark_bg
 
     a
       color: white
-      @extend ._undecorated
-    
+
   img
     border: $border_white
 
 
   .main-feature
-    
+
     > *
       text-align: center
       display: block
-    
+
     img
       margin: $medium auto $small auto
-      
+
     h2
       padding-bottom: $medium
 
@@ -42,4 +41,7 @@
 
 
 
-
+#reports_show
+  .related
+    .galleries
+      @extend ._feature_title
