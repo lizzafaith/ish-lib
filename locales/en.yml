@@ -76,7 +76,7 @@ en:
     error: Error
     failure: Failure
     for: for
-    home: Home
+    home: Infinite Shelter
     homepage: Travel & Party Guide & Organizer - Infinite Shelter
     in: in
     ish: Party & Travel Guide & Organizer
@@ -165,13 +165,14 @@ en:
     
   reports:
     edit: Edit Article
-    list: Articles
+    list: Stories
     more_news: More Articles
     my:
       search: Search My Articles
     new: New Article
     none: No articles found, please try again.
     one: Article
+    read_article: Read Article
     recommended: Recommended Articles
     searching_for: Searching Articles for `%{keywords}`
     title: Travel and Entertainment Articles
@@ -184,7 +185,7 @@ en:
     features: Hot Topics
     one: Tag
     title: Tags
-    list: Tags
+    list: Topics
     name: Topic `%{name}`
     new: New Tag 
     

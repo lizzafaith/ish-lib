@@ -1,0 +1,95 @@
+
+@import 'vars.sass'
+
+
+.container
+  padding-top: $small
+
+#header_main
+  position: relative
+
+  h1
+    margin: 0 auto
+    text-align: center
+    font-size: 1em
+
+    a
+      text-decoration: none
+      color: black
+      font-weight: bold
+
+  #set_locale,
+    display: none
+
+  ul#menu_main
+    @extend ._menu_flat
+    float: left
+
+    .home
+      display: none
+
+    li
+      line-height: $logo
+      height: $logo
+      margin-right: $medium
+
+      a
+        text-decoration: none
+        font-size: 1.2em
+        padding: $medium        
+        // background: white
+        border: $border_white
+
+  ul#login_register
+    @extend ._menu
+    float: right
+    
+  .logo
+    float: left
+    border: $border_white
+
+.header-ad
+  clear: both
+  text-align: center
+  margin: auto
+
+
+#footer_main
+  margin-top: $large
+  padding: $large 0
+  background: url('/assets/backgrounds/bg_texture_dark.jpg')
+
+  .footer-menu
+    @extend .span-8
+    @extend ._menu
+
+    li
+      margin: $medium
+
+      a
+        background: url('/assets/backgrounds/gray-1.jpg')
+        padding: $small
+      
+
+  .shtick
+    @extend .span-6
+
+  .copyright
+    @extend .span-10
+    @extend .last
+
+    .logo
+      @extend ._float_left
+
+  .cities
+    margin: 0 auto
+    text-align: center
+
+    ul
+      @extend ._menu_flat
+
+      li
+        padding: $medium
+
+  .footer-data
+    display: none

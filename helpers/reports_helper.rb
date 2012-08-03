@@ -25,6 +25,10 @@ module ReportsHelper
     end
   end
   
+  def report_promo_path report
+      "/reports/promo/#{report.name_seo}"
+  end
+  
   def global_report_path report
     if report[:name_seo].blank?
       return 'http://infiniteshelter.com/reports/' + report.id.to_s

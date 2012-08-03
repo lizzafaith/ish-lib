@@ -46,7 +46,28 @@ $h1_height: 100px
 
 $sidebar: 300px
 
-._index
+
+._menu
+  li
+    list-style-type: none
+
+._menu_flat
+  @extend ._menu
+
+  li
+    display: inline
+
+._float_left
+  float: left
+  margin-right: $medium
+  margin-bottom: $medium
+
+._float_right
+  float: right
+  margin-left: $medium
+  margin-bottom: $medium
+
+._list
   margin-bottom: 50px
 
   > h1,
@@ -61,7 +82,7 @@ $sidebar: 300px
 
 
 ._galleries_list
-  @extend ._index
+  @extend ._list
 
   .thumb
     float: left
@@ -69,7 +90,7 @@ $sidebar: 300px
 
 
 ._reports_list
-  @extend ._index
+  @extend ._list
 
   .item
 

@@ -1,50 +1,16 @@
 
 
-@import 'vars'
-
-
-
-#reports_homepage
-  position: relative
-
-  #reports_features
-    @extend ._index
-
-    .feature-main
-      margin: $large 0
-
-      h2, h3
-        margin-bottom: 0
-
-    h2.section
-      display: none
-
-  #events_features,
-    display: none
-
+@import 'vars.sass'
+@import 'grid'
 
 #reports_show
-
   .recommended
     @extend ._index
-    margin-top: $large
 
-  .report-image,
-  .related,
-    float: right
-    clear: right
-    margin: 0 0 $small $small
-
-#reports_index,
-#reports_search
-
-  .items
-    clear: both
-
-  #reports__search
-    padding: $medium
-    border: $border
-    margin: $large 0
-    float: right
-
-  
+    .items
+      .item
+        @extend .column
+        @extend .span-3
+      .item:nth-child(4n)
+        @extend .last
+      .item:nth-child(4n + 1)
