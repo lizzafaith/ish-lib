@@ -1,0 +1,45 @@
+
+@import 'vars.sass'
+
+#galleries__features
+  @extend ._feature_title
+  
+  .item,
+  .main-feature,
+    @extend ._dark_bg
+
+    a
+      color: white
+      text-decoration: none
+    
+  img
+    border: $border_white
+
+
+  .main-feature
+    
+    > *
+      text-align: center
+      display: block
+    
+    img
+      margin: $medium auto $small auto
+      
+    h2
+      padding-bottom: $medium
+
+  .item
+    padding: $medium 0
+    margin-bottom: $medium
+
+    > h3,
+    > a,
+      padding-left: $medium
+      float: left
+      height: $logo
+      line-height: $logo
+      margin-bottom: 0
+
+
+
+
