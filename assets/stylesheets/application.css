@@ -6,7 +6,7 @@
  *= require ./vendor/superfish
  *= require ./vendor/uploadify
  *= require ./vendor/lightbox
- *
+ *= require ./vendor/lizza_default
  *
  *= require_directory ./common
  *= require_directory ./application
