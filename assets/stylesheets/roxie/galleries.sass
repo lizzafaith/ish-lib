@@ -44,4 +44,27 @@
 #reports_show
   .related
     .galleries
+
       @extend ._feature_title
+
+#galleries_index
+  @extend ._galleries_list
+  .galleries
+    @extend ._list_two
+
+    h3
+      margin-top: $medium
+      margin-bottom: $small
+
+#galleries_show
+
+  #header_three
+    h2
+      margin-bottom: 0
+
+  .prev-next,
+  #photo_main,
+    text-align: center
+
+  .share-this
+    margin-top: 0

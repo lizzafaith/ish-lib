@@ -15,4 +15,8 @@ module TagsHelper
     "/tags/#{tag[:id].to_s}"
   end
   
+  def feature_tags_path
+    "/tags/features"
+  end
+  
 end

@@ -20,6 +20,7 @@
     border-left: 5px solid gray
 
     h1,
+    h2,
     h3,
       float: left
 
@@ -47,6 +48,13 @@
 ._list
   clear: both
 
+
+
+
+
+//
+// span-XX
+//
 
 ._list_four
   @extend ._list
@@ -87,3 +95,79 @@
     @extend .last
 
 
+
+
+
+
+
+
+
+
+
+// stolen from fogcreek.com
+body
+  // font: 16px/20px ff-tisa-web-pro-1,ff-tisa-web-pro-2,Georgia,"Times New Roman",serif
+  // font-size: 100%
+
+._menu_main_trash
+  bottom: 25px
+  float: right
+  position: absolute
+  right: 0
+
+._menu_main
+  float: left
+  margin: 30px 0 0 0
+
+  li
+    display: block
+    float: left
+
+  a 
+    border: 1px solid transparent
+    border-radius: 4px 4px 4px 4px
+    color: #333333
+    display: block
+    font-family: myriad-pro-condensed-1,myriad-pro-condensed-2,'Helvetica Neue',Arial,'Lucida Grande',sans-serif
+    font-size: 20px
+    margin-left: 10px
+    padding: 5px 10px
+    text-decoration: none
+
+  a:hover
+    background: url("/assets/gradient.png") repeat-x scroll left bottom #D1E1E6
+    border: 1px solid #99821F !important
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset
+
+  // trash
+  li.header-nav-highlight
+    a
+      background: url("/assetsx/gradient.png") repeat-x scroll left bottom #DDCD6F
+      border: 1px solid #B3B3B3 !important
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset
+
+    a:hover
+      background-color: #F2DE7C
+
+.tags li.a_tags,
+.reports li.a_reports,
+.cities li.a_cities,
+.galleries li.a_galleries,
+.users li.a_users,
+  a,
+  a:hover,
+    background: url("/assets/gradient.png") repeat-x scroll left bottom #D1E1E6
+    border: 1px solid #99821F !important
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+
+hr 
+  background: #B3B3B3 !important
+  border: medium none
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075)
+  clear: both
+  color: #B3B3B3
+  display: block
+  height: 1px
+  margin: 0
+  padding: 0
+  width: 100%
