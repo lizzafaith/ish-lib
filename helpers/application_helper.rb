@@ -8,15 +8,19 @@ module ApplicationHelper
   
   
   # serve ads?
-  def adserv
-    return true
-    
+  def adserv    
     if Rails.env.production?
-      if current_user && current_user[:id] == 1
-        ;
+      if current_user 
+        if current_user[:id] == 1 || current_user[:email] == '314658@gmail.com'
+          return false
+          
+        end
       end
+      return true
+      
     end
-
+    return false
+    
   end
   
   def set_layout_path

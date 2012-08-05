@@ -13,6 +13,12 @@ module Mixin::AppHelper
       @action_name = params[:controller].gsub('/', '_') + '_' + params[:action]
     rescue
     end
+    
+    begin
+      @action_classes = params[:controller].gsub('/', '_')
+    rescue
+    end
+    
   end
   
   def puts_each! args

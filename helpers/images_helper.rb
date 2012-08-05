@@ -19,7 +19,8 @@ module ImagesHelper
   end
   
   def image_ish
-    image_tag 'logo.png'
+    # image_tag 'logo.png'
+    image_tag 'ish_logo_100.png'
   end
   
   def image_top

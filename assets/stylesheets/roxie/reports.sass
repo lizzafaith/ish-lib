@@ -2,6 +2,7 @@
 @import 'vars.sass'
 
 #reports_homepage
+
   #features_content
     .item
       @extend .span-6
@@ -33,14 +34,27 @@
         h2
           margin-top: 0
 
+  .feature
+    position: relative
+    clear: left
+    min-height: 330px
+
+    .share-this
+      position: absolute
+      margin: 0
+      top: 0
+      left: 0
+
+    .ad-rect
+      position: absolute
+      top: 4.5em
+      left: 0
+
   .reports-feature
+    margin-left: 360px
+
     .thumb img
       @extend ._float_left
-
-    h1
-      @extend ._undecorated
-
-  
 
 #reports_show
   h1.title
@@ -112,3 +126,9 @@
 
   .title
     margin-top: $large
+
+
+
+.reports-feature
+  h1
+    // background: url('/assets/new_16.png') right center no-repeat

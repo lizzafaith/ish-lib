@@ -68,6 +68,7 @@ en:
     about: About
     admin: Admin
     by: by
+    calendar: Calendar
     clear: Clear
     coordinates: Coordinates
     create: Create
@@ -139,7 +140,7 @@ en:
     galleries:
       list: My Galleries
     reports:
-      list: My Reports
+      list: My Stories
       
     videos:
       list: My Videos
@@ -165,18 +166,18 @@ en:
     
     
   reports:
-    edit: Edit Article
+    edit: Edit Story
     list: Stories
     more_news: More Stories
     my:
       search: Search My Stories
-    new: New Article
-    none: No articles found, please try again.
-    one: Article
-    read_article: Read Article
-    recommended: Recommended Articles
-    searching_for: Searching Articles for `%{keywords}`
-    title: Travel and Entertainment Articles
+    new: New Story
+    none: No stories found, please try again.
+    one: Story
+    read_article: Read Story
+    recommended: Recommended Stories
+    searching_for: Searching Stories for `%{keywords}`
+    title: Travel Stories
     
   seo:
     tag_list: Tag List
