@@ -67,13 +67,17 @@ en:
     a: a
     about: About
     admin: Admin
+    attach_file: Attach File
+    attach_photo: Attach Photo
     by: by
     calendar: Calendar
     clear: Clear
     coordinates: Coordinates
+    coords: Coordinates
     create: Create
     delete: Delete
     do_you_have_address: Do you have the address?
+    ee: prohibited this report from being saved
     error: Error
     expanded_view: Extended View
     failure: Failure
@@ -83,6 +87,7 @@ en:
     in: in
     ish: Party & Travel Guide & Organizer
     jump_to: Jump To
+    language: Language
     layout:
       light_semantic: Light Semantic is the only available layout for this page. 2012-07-15
     list: List
