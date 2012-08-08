@@ -19,7 +19,8 @@ module ImagesHelper
   end
   
   def image_ish
-    image_tag 'logo.png'
+    # image_tag 'logo.png'
+    image_tag 'ish_logo_100.png'
   end
   
   def image_top
@@ -85,11 +86,15 @@ module ImagesHelper
     
     if defined? photo.photo
       if defined? photo.photo.url
-        image_tag photo.photo.url(size)
+        if photo.photo.url == '/photos/original/missing.png'
+          ;
+        else
+          return image_tag photo.photo.url(size)
+        end
       end
-    else
-      missing
     end
+    
+    image_missing
   end
   
   def image_missing
@@ -97,7 +102,7 @@ module ImagesHelper
   end
   
   def missing
-    image_tag('no_photo.png')
+    image_missing
   end
   
   def missing? item

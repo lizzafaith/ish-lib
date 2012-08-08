@@ -1,0 +1,152 @@
+
+@import 'vars.sass'
+
+#reports_homepage
+
+  #features_content
+    .item
+      @extend .span-6
+
+    .item:nth-child(4n)
+      @extend .last
+
+  .simple-list
+    @extend ._menu_flat
+
+  .ad-rect
+    clear: left
+    @extend .span-9
+  .reports-feature
+    @extend .span-15
+    @extend .last
+
+  #reports__features
+    padding-bottom: $large
+
+    h2
+      margin: $large 0 0 0 
+
+    .ad-rect
+      margin: $large*2 0
+
+    .items
+      .item:nth-child(1)
+        h2
+          margin-top: 0
+
+  .feature
+    position: relative
+    clear: left
+    min-height: 330px
+
+    .share-this
+      position: absolute
+      margin: 0
+      top: 0
+      left: 0
+
+    .ad-rect
+      position: absolute
+      top: 4.5em
+      left: 0
+
+  .reports-feature
+    margin-left: 360px
+
+    .thumb img
+      @extend ._float_left
+
+#reports_show
+  h1.title
+    margin: $medium 0 $small 0
+    
+  #cities_header,
+  #users__header,
+    display: none
+
+  .inline-ad
+    @extend ._float_left
+    clear: left
+    margin-top: $medium
+
+  .ad-bottom
+    text-align: center
+    padding-top: $medium
+    clear: left
+    
+
+  #header_three h1
+    margin-top: $medium
+    margin-bottom: 0
+
+  .meta,
+  .subhead,
+    margin-bottom: $small
+
+  .report-image,
+  .tags,
+  .related,
+  .galleries,
+  .videos,
+    @extend ._float_right
+    clear: right
+    margin-botton: $medium
+
+    .title
+      margin-top: $medium
+      width: 330px
+
+    .galleries
+      h3
+        margin-bottom: $small
+
+  .report-image
+    margin-top: 3em
+
+  .subhead
+    width: 500px
+    font-style: oblique
+
+  .text-body
+    width: 600px
+
+  .subhead,
+  .text-body,
+    font-size: 1.2em
+
+  .recommended
+    margin: $medium 0
+
+
+#reports_index
+  @extend ._feature_title
+  @extend ._list_two
+  @extend ._reports_list
+
+  .title
+    margin-top: $large
+
+
+
+.reports-feature
+  h1
+    // background: url('/assets/new_16.png') right center no-repeat
+
+
+
+#reports_new,
+#reports_edit,
+  form
+    input
+      size: 120%
+      text-size: 1.2em
+
+    input,
+    textarea
+      clear: both
+
+    textarea
+      display: block
+
+    .subhead
+      height: 100px

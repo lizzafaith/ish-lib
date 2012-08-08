@@ -18,7 +18,7 @@
   #galleries_features
     @extend ._galleries_small
 
-  #reports_features
+  #reports__features
     @extend ._reports_list
 
   #tags__features
@@ -61,14 +61,7 @@
       padding: $small
       @extend .column
 
-  .recommended
-    .items
-      .item
-        @extend .column
-        @extend .span-3
-      .item:nth-child(4n)
-        @extend .last
-      .item:nth-child(4n + 1)
+  
 
   .related
     @extend ._reports_list
@@ -85,3 +78,49 @@
         float: right 
         clear: right
         width: 400px
+
+
+
+
+
+
+#reports_homepage
+  position: relative
+
+  #reports__features
+    @extend ._index
+
+    .feature-main
+      margin: $large 0
+
+      h2, h3
+        margin-bottom: 0
+
+    h2.section
+      display: none
+
+  #events_features,
+    display: none
+
+
+#reports_show
+
+  .report-image,
+  .related,
+    float: right
+    clear: right
+    margin: 0 0 $small $small
+
+#reports_index,
+#reports_search
+
+  .items
+    clear: both
+
+  #reports__search
+    padding: $medium
+    border: $border
+    margin: $large 0
+    float: right
+
+  

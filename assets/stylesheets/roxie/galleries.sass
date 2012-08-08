@@ -1,0 +1,71 @@
+
+@import 'vars.sass'
+
+#galleries__features
+  @extend ._feature_title
+
+  .item,
+  .main-feature,
+    @extend ._dark_bg
+
+    a
+      color: white
+
+  img
+    border: $border_white
+
+
+  .main-feature
+
+    > *
+      text-align: center
+      display: block
+
+    img
+      margin: $medium auto $small auto
+
+    h2
+      padding-bottom: $medium
+
+  .item
+    padding: $medium 0
+    margin-bottom: $medium
+
+    > h3,
+    > a,
+      padding-left: $medium
+      float: left
+      height: $logo
+      line-height: $logo
+      margin-bottom: 0
+
+
+
+#reports_show
+  .related
+    .galleries
+
+      @extend ._feature_title
+
+#galleries_index
+  @extend ._galleries_list
+  .galleries
+    @extend ._list_two
+
+    h3
+      margin-top: $medium
+      margin-bottom: $small
+
+#galleries_show
+
+  #header_three
+    h2
+      margin-bottom: 0
+
+  .prev-next,
+  #photo_main,
+    text-align: center
+
+  .ad-lead
+    text-align: center
+    margin: $small auto 0 auto

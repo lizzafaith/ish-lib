@@ -3,7 +3,8 @@
 
 .ad
   display: inline-block
-  background: gray
+  border: $border_white
+  // background: gray
 
 .ad_large_rectangle,
 .ad-large-rectangle
@@ -38,13 +39,13 @@
   width: 200px
   height: 90px
 
-#header_main
-  .links-large
-    float: left
-    margin-left: $gutter
-    @extend .ad
 
+.wide-line
+  @extend .ad
+  width: 728px
+  height: 15px
 
-#ad_skyscraper_hanging
-  position: absolute
-  left: -180px
+.ad-half-banner
+  @extend .ad
+  width: 234px
+  height: 60px

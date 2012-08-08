@@ -1,0 +1,163 @@
+
+@import 'vars.sass'
+
+
+#layout_roxie,
+#layout_roxie_dashboard,
+
+  #header_main
+    position: relative
+
+    #set_locale,
+      display: none
+
+    ul#menu_main
+      @extend ._menu_main
+
+      .a_home
+        display: none
+
+      li.trash
+        line-height: $logo
+        height: $logo
+        margin-right: $medium
+
+        a
+          font-size: 1.2em
+          padding: $medium        
+          // background: white
+          border: $border_white
+
+    ul#login_register
+      @extend ._menu
+      float: right
+
+  .header-ad
+    clear: both
+    text-align: center
+    margin: auto
+
+
+  #footer_main
+    margin-top: $large
+    padding-top: $large
+    clear: left
+    padding-bottom: $large*3
+
+    section
+      padding-top: $large
+      clear: both
+
+    .footer-menu
+      @extend .span-8
+      @extend ._menu
+
+      li
+        margin: $medium
+
+    .footer-menu,
+    .cities,
+      a
+        background: url('/assets/backgrounds/gray-1.jpg')
+        padding: $small
+
+    .shtick
+      @extend .span-6
+
+    .copyright
+      @extend .span-10
+      @extend .last
+
+      .logo
+        @extend ._float_left
+
+    .cities
+      @extend .span-24
+
+      margin: 0 auto
+      text-align: center
+
+      ul
+        @extend ._menu_flat
+
+        li
+          padding: $medium
+
+    .footer-data
+      display: none
+
+
+#layout_roxie_dashboard
+
+  #header_main
+
+    h1,
+    .logo,
+      @extend ._float_left
+      height: 20px
+      line-height: 20px
+
+
+
+#header_one,
+#header_main,
+#cities__header,
+#users__header,
+#header_three
+  position: relative
+  padding-top: $small
+
+  h1
+    margin: 0 auto
+    font-size: 1em
+    position: absolute
+    top: 0
+    left: 50%
+    text-align: center
+
+    a
+      color: black
+      font-weight: bold
+
+  .logo
+    float: left
+
+  ul.menu
+    float: left
+    @extend ._menu_main
+
+// stolen from youtube.com
+.yt-horizontal-rule
+  border-bottom: 1px solid #FFFFFF
+  border-top: 1px solid #DDDDDD
+  height: 0
+  margin: 0
+  position: relative
+  z-index: -99
+
+  .first
+    background: -moz-radial-gradient(right bottom , circle , rgba(0, 0, 0, 0.08), transparent 80px, transparent 100%) repeat scroll 0 0 transparent
+    left: 0
+    width: 80px
+
+  span
+    border: medium none
+    display: block
+    height: 80px
+    margin: 0
+    padding: 0
+    position: absolute
+    top: -80px
+    z-index: -100
+
+  .second
+    background: -moz-radial-gradient(left bottom , circle , rgba(0, 0, 0, 0.08), transparent 80px, transparent 100%) repeat scroll 0 0 transparent
+    right: 0
+    width: 80px
+
+  .third 
+    background: -moz-linear-gradient(center bottom , rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.08) 1px, rgba(0, 0, 0, 0.08) 1px, transparent 80px, transparent 100%) repeat scroll 0 0 transparent
+    margin-left: 80px
+    margin-right: 80px
+    position: relative
+    top: -80px

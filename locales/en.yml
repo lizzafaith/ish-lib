@@ -67,20 +67,27 @@ en:
     a: a
     about: About
     admin: Admin
+    attach_file: Attach File
+    attach_photo: Attach Photo
     by: by
+    calendar: Calendar
     clear: Clear
     coordinates: Coordinates
+    coords: Coordinates
     create: Create
     delete: Delete
     do_you_have_address: Do you have the address?
+    ee: prohibited this report from being saved
     error: Error
+    expanded_view: Extended View
     failure: Failure
     for: for
-    home: Home
+    home: Infinite Shelter
     homepage: Travel & Party Guide & Organizer - Infinite Shelter
     in: in
     ish: Party & Travel Guide & Organizer
     jump_to: Jump To
+    language: Language
     layout:
       light_semantic: Light Semantic is the only available layout for this page. 2012-07-15
     list: List
@@ -99,6 +106,7 @@ en:
     pub_unpub: Published / Not
     save: Save
     search: Search
+    see_all: See All
     set: Set
     set_layout: Select Layout
     submit: Submit
@@ -138,7 +146,7 @@ en:
     galleries:
       list: My Galleries
     reports:
-      list: My Reports
+      list: My Stories
       
     videos:
       list: My Videos
@@ -164,17 +172,18 @@ en:
     
     
   reports:
-    edit: Edit Article
-    list: Articles
-    more_news: More Articles
+    edit: Edit Story
+    list: Stories
+    more_news: More Stories
     my:
-      search: Search My Articles
-    new: New Article
-    none: No articles found, please try again.
-    one: Article
-    recommended: Recommended Articles
-    searching_for: Searching Articles for `%{keywords}`
-    title: Travel and Entertainment Articles
+      search: Search My Stories
+    new: New Story
+    none: No stories found, please try again.
+    one: Story
+    read_article: Read Story
+    recommended: Recommended Stories
+    searching_for: Searching Stories for `%{keywords}`
+    title: Travel Stories
     
   seo:
     tag_list: Tag List
@@ -184,7 +193,7 @@ en:
     features: Hot Topics
     one: Tag
     title: Tags
-    list: Tags
+    list: Topics
     name: Topic `%{name}`
     new: New Tag 
     

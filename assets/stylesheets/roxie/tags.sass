@@ -1,0 +1,79 @@
+
+@import 'vars.sass'
+
+#reports_homepage
+  #features_content
+    .tags
+      @extend ._feature_title
+
+      h1
+        font-size: 1em
+
+      ul
+        @extend ._menu_simple
+
+
+
+#tags_index
+
+  .feature-tags,
+    display: none
+
+  .feature-tags,
+    clear: left
+
+  .tags-trash
+    clear: left
+
+    .item
+      @extend .span-6
+
+    .item:nth-child(4n)
+      @extend .last
+
+  .feature-tags
+    @extend ._feature_title
+
+  .tags
+    h2,
+    h3,
+    h4,
+    h5,
+      margin-bottom: 0
+    h2
+      margi-left: 0
+    h3
+      margin-left: $medium
+    h4
+      margin-left: $medium*2
+    h5
+      margin-left: $medium*3
+
+  .n-reports,
+  .n-galleries,
+  h2,
+    @extend ._float_left
+    margin-top: 20px
+    height: 40px
+    line-height: 40px
+  
+  .item,
+  .descr,
+    clear: left
+
+  .descr
+    @extend .span-12
+  h3
+    clear: left
+
+  .menu-secondary
+    display: none
+
+#tags_show
+  .reports,
+  .galleries,
+    clear: left
+    margin-bottom: $medium
+
+  .share-this
+    margin-top: 0
