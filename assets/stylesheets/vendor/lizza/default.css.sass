@@ -1,0 +1,68 @@
+/* GENERAL */
+html
+	height: 100%
+body
+	@extend html
+	background: url(/assets/backgrounds/screaming-map.png) no-repeat scroll center 0 #000
+	color: #ccc
+	font:
+		family: Tahoma
+		size: 13px
+		weight: normal 
+	a
+		color: #ec008c
+		outline: 0
+		text-decoration: none
+		.active:
+			color: #8db618
+	a:hover
+		color: #26aacb
+	ul, ol
+		list-style: none
+
+/* STYLISTIC */
+
+/* STRUCTURE */
+/** HEADER **/
+#header
+	background-color: rgba(0,0,0,0.5)
+	height: 80px
+	ul
+		margin-top: 20px
+	li a
+		background: url(/assets/backgrounds/menu-border.png) no-repeat scroll right center transparent
+		float: left
+		font-size: 14px
+		font-weight: bold
+		padding: 10px 15px
+	li.last a
+		background: none
+	h1
+		line-height: 0
+		text-indent: -9999px
+#logo a
+	display: block
+	text-align: center
+	
+/** CONTENT **/
+#content
+	min-height: 80%
+	overflow: auto
+	padding-bottom: 30px
+
+
+/** FOOTER **/
+#footer
+	@extend #header
+	height: 50px
+	p
+		line-height: 35px
+	ul
+		margin-top: 0
+	li a
+		background: none
+		float: left
+		font-size: 12px
+		font-weight: normal
+		padding: 10px 15px
+	

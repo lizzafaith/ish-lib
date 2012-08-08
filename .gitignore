@@ -1,0 +1,5 @@
+.bundle
+log/*.log
+tmp/
+.sass-cache/"ish-lib" 
+Thumbs.db
