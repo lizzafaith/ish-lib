@@ -26,20 +26,33 @@ body
 /** HEADER **/
 #header
 	background-color: rgba(0,0,0,0.5)
-	height: 80px
+	.row
+		background: 
+			image: url(/assets/grad-hr.png) 
+			repeat: no-repeat 
+			scroll: scroll 
+			position: left 61px
+			color: transparent
 	ul
 		margin-top: 20px
 	li a
-		background: url(/assets/backgrounds/menu-border.png) no-repeat scroll right center transparent
 		float: left
-		font-size: 14px
-		font-weight: bold
 		padding: 10px 15px
-	li.last a
-		background: none
 	h1
 		line-height: 0
 		text-indent: -9999px
+#main_menu 
+	li a
+		background: url(/assets/backgrounds/menu-border.png) no-repeat scroll right center transparent
+		font-size: 14px
+		font-weight: bold
+	li.last a
+		background: none
+#user_menu
+	@extend #main_menu
+	float: right
+	min-width: 155px
+
 #logo a
 	display: block
 	text-align: center
@@ -49,20 +62,24 @@ body
 	min-height: 80%
 	overflow: auto
 	padding-bottom: 30px
+	h2
+		color: #8db618
+		text-align: center
+	.rate-this .star
+		display: inline
 
 
 /** FOOTER **/
 #footer
 	@extend #header
-	height: 50px
+	.row
+		background:
+			position: right -4px
+		min-height: 50px
 	p
 		line-height: 35px
 	ul
+		float: right
 		margin-top: 0
-	li a
-		background: none
-		float: left
-		font-size: 12px
-		font-weight: normal
-		padding: 10px 15px
+		min-width: 350px
 	

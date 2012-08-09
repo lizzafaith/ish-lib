@@ -1,15 +1,6 @@
 /*
- * 
- * should get reports and galleries from light_semantic. 
  *
- * require ./vendor/blueprint/screen
- * require ./vendor/superfish
- * require ./vendor/uploadify
- *= require ./vendor/lizza/1140
- *= require ./vendor/lizza/default
- *
- * require_directory ./common
- * require_directory ./application
+ *= require_directory ./lizza
  *
  *
 */
