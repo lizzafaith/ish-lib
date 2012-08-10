@@ -41,17 +41,17 @@ body
 	h1
 		line-height: 0
 		text-indent: -9999px
-#main_menu 
+#menu_main 
 	li a
 		background: url(/assets/backgrounds/menu-border.png) no-repeat scroll right center transparent
 		font-size: 14px
 		font-weight: bold
-	li.last a
+	li:last-child a
 		background: none
-#user_menu
-	@extend #main_menu
+#login_register
+	@extend #menu_main
 	float: right
-	min-width: 155px
+	min-width: 260px
 
 #logo a
 	display: block
